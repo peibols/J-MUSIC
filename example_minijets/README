@@ -1,0 +1,19 @@
+Scripts I use to run full job
+
+Differences with usual files
+
+-sweeper.sh has two small changes (check the file and the comments)
+
+-music_input_minijets
+
+  jet_medium_response_flag  3
+  jet_sigma_x 0.4
+  jet_sigma_eta 0.4
+  jet_sigma_tau 0.1
+  single_parton 0
+  one_hard_collision 0
+  causal_diffusion 0
+  .
+  .
+  .
+  Jets_seed  SET_SEED       #seed is changed according to job number in submit_job.sh script	

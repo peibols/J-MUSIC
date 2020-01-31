@@ -1,0 +1,30 @@
+!Initialization options for Pythia
+
+PDF:pSet = 13
+
+PDF:useHardNPDFB = on			!use nPDF for beam B
+PDF:nPDFSetB = 1
+PDF:nPDFBeamB = 100822080		!PbPb nucleus
+
+PDF:useHardNPDFA = on			!use nPDF for beam A
+PDF:nPDFSetA = 1
+PDF:nPDFBeamA = 100822080		!PbPb nucleus
+
+Print:quiet = on			!dont print stuff
+Beams:idA = 2212                        !beam A (positive eta)
+Beams:idB = 2212                        !beam B (negative eta)
+Beams:eCM = 2760.			!sqrt(s)
+SoftQCD:all = off			!non-diffractive processes
+HardQCD:all = on			!hard processes
+HadronLevel:all = off			!stop before hadronization
+PartonLevel:ISR = on			!include ISR
+PartonLevel:MPI = off			!no multi-particle interactions
+TimeShower:pTmin = 1.			!minimum pT needed to split
+Random:setSeed= on			!use random seed
+
+!PhaseSpace:bias2Selection = on		!use oversampling method
+!PhaseSpace:bias2SelectionPow = 4.  	!power of the bias
+!PhaseSpace:bias2SelectionRef = 50.	!pTRef, where weight is 1
+
+PhaseSpace:pTHatMin = 4.        	!minimum pT of dijet
+PhaseSpace:pTHatMax = -1    		!maximum pT of dijet
