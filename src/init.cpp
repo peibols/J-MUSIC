@@ -445,7 +445,9 @@ void Init::initial_Scott_IPGlasma_XY(int ieta, SCGrid &arena_prev,
         for (int iy = 0; iy < (ny-100); iy++) {
             profile >> dummy1 >> dummy2 >> dummy3
                     >> density >> utau >> ux >> uy
-                    >> dummy  >> dummy  >> dummy  >> dummy;
+                    >> dummy  >> dummy  >> dummy  >> dummy
+                    >> dummy  >> dummy  >> dummy  >> dummy
+                    >> dummy  >> dummy  >> dummy;
             temp_profile_ed[ix+50][iy+50] = density;
             temp_profile_ux[ix+50][iy+50] = ux;
             temp_profile_uy[ix+50][iy+50] = uy;
