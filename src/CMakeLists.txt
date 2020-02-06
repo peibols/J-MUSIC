@@ -27,6 +27,7 @@ set (SOURCES
     jets_embedding.cc
     lund.cc
     tree.cc
+    medium_hadro.cc
     )
 
 if (test)

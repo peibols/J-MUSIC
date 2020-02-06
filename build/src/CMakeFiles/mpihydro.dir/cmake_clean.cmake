@@ -27,6 +27,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mpihydro.dir/jets_embedding.cc.o"
   "CMakeFiles/mpihydro.dir/lund.cc.o"
   "CMakeFiles/mpihydro.dir/tree.cc.o"
+  "CMakeFiles/mpihydro.dir/medium_hadro.cc.o"
   "mpihydro.pdb"
   "mpihydro"
 )

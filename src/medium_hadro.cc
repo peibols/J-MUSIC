@@ -322,7 +322,7 @@ void Jets::SampleSurface(Parton parton)
         sinh_y[ipt] = sinh(y_local);
       }
       
-      // Build spectrum (ugly arrangement, fix!)      
+      // Build spectrum      
       for (int ipt = 0; ipt < iptmax; ipt++) {
         double y = rapidity[ipt];    
       	if (fabs(y - eta_s) < y_minus_eta_cut) {

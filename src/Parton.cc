@@ -23,6 +23,10 @@ Parton::Parton(double px, double py, double pz, double en, double q, double mass
 
 	_f_dist=0.;
 
+        _last_temp=1000;
+
+	for (unsigned a=0; a<4; a++) _hyper_point.push_back(-1.);
+
 	for (unsigned a=0; a<4; a++) _x.push_back(-1.);
 	for (unsigned a=0; a<4; a++) _xi.push_back(-1.);
 
@@ -66,6 +70,10 @@ Parton::Parton(vector<double> p, double q, double mass, int mom, int d1, int d2,
 	}  
 	else _tau_form=-1.;
 
+        _last_temp=1000;
+
+	for (unsigned a=0; a<4; a++) _hyper_point.push_back(-1.);
+	
 	for (unsigned a=0; a<4; a++) _x.push_back(-1.);
 	for (unsigned a=0; a<4; a++) _xi.push_back(-1.);
 
@@ -91,6 +99,14 @@ Parton::Parton(vector<double> p, double q, double mass, int mom, int d1, int d2,
 Parton::~Parton()
 {
 	//std::cout << "Parton destructor called" << std::endl;
+}
+
+void Parton::set_hyper_point(double x, double y, double rap, double tau)
+{
+  _hyper_point[0]=x;
+  _hyper_point[1]=y;
+  _hyper_point[2]=rap;
+  _hyper_point[3]=tau;
 }
 
 double Parton::delta_R(Parton other_parton)

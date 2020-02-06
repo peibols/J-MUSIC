@@ -9,6 +9,18 @@ using namespace std;
 Jets::Jets(const InitData &DATA_in) : DATA(DATA_in) 
 {
   for (unsigned a=0; a<4; a++) injected_momentum.push_back(0.);
+
+  surface_in_binary = DATA.freeze_surface_in_binary; 
+
+  boost_invariant = DATA.boost_invariant;
+
+  bulk_deltaf_kind = 1;
+
+  // Tolerance for medium hadronization
+  x_tol = 0.1;
+  y_tol = 0.1;
+  tau_tol = 0.1;
+  eta_tol = 0.1;
 }
 
 void Jets::InitJets(hydro_source &hydro_source_terms) {
@@ -101,27 +113,34 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 	    
 	    //Compute source part
 	    //if (tau+DATA.tau0>parton_list[iparton].GetTau()) cout << " Tau outside= " << parton_list[iparton].GetTau() << endl;
+
 	    std::shared_ptr<jet> sourceterm(new jet);
+
 	    sourceterm->tau_form=parton_list[iparton].GetTau();
 	    sourceterm->x_perp=parton_list[iparton].vGetPos()[0];
 	    sourceterm->y_perp=parton_list[iparton].vGetPos()[1];
 	    if (p_aft[3]!=0.) sourceterm->eta_source=parton_list[iparton].GetsEta();
 	    else sourceterm->eta_source=sEta;
+
 	    sourceterm->dpxdtau=p_bef[0]-p_aft[0];
 	    sourceterm->dpydtau=p_bef[1]-p_aft[1];
 	    sourceterm->dpzdtau=p_bef[2]-p_aft[2];
 	    sourceterm->dEdtau=p_bef[3]-p_aft[3];
+
 	    if (p_bef[3]-p_aft[3]!=0.) hydro_source_terms.update_sources(sourceterm);
 	    if (p_bef[3]-p_aft[3]!=0.) {
               for (unsigned a=0; a<4; a++) {
                 injected_momentum[a]+=p_bef[a]-p_aft[a];
 	      }
 	    }
+	    
 	    //if (p_bef[3]-p_aft[3]!=0.) cout << " delta En= " << p_bef[3]-p_aft[3] << endl; 
 	    //if (tau>=DATA.tau0) cout << setprecision(6) << "parton " << iparton << " deltaEn= " << p_bef[3]-p_aft[3] <<  " x= " << parton_list[iparton].vGetPos()[0] << " y= " << parton_list[iparton].vGetPos()[1] << endl;
 	    //if (p_aft[3]==0.) cout << " ABSORBED !!! \n \n";
+	    
 	    double lambda=parton_list[iparton].vGetP()[3]/parton_list[iparton].vGetPIn()[3];
 	    parton_list[iparton].SetLambda(lambda);	
+	    
 	    //Parton splits
 	    if (parton_list[iparton].splitTime()<tau && parton_list[iparton].GetTauForm()!=-1.) {
             
@@ -240,9 +259,8 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
 
     vector<double> p_now=parton.vGetP();
 
-    double quench=1.;
     //Update momentum
-   
+    double quench=1.;
     if (parton.vGetP()[3]>0. && f_temp>=Tc && CF>0.) {
         if (kappa!=0.) {
             double Efs=ei*lore*(1.-vscalw);
@@ -272,6 +290,12 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
 	        parton.vSetP(pzero);
             }
         }
+    }
+
+    //Store position of hyper-surface crossing
+    if (f_temp < Tc && parton.last_temp() >= Tc) {
+      parton.set_last_temp(f_temp);
+      parton.set_hyper_point( x, y, rap, tau );
     }
 
 
