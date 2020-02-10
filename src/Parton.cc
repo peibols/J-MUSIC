@@ -109,6 +109,11 @@ void Parton::set_hyper_point(double x, double y, double rap, double tau)
   _hyper_point[3]=tau;
 }
 
+void Parton::set_hyper_point(vector<double> hyper_point)
+{
+  _hyper_point=hyper_point;
+}
+
 double Parton::delta_R(Parton other_parton)
 {
     vector<double> op=other_parton.vGetP();

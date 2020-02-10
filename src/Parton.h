@@ -58,6 +58,7 @@ class Parton
     double last_temp() const {return _last_temp;}
 
     void set_hyper_point(double x, double y, double rap, double tau);
+    void set_hyper_point(vector<double> hyper_point);
     vector<double> hyper_point() const {return _hyper_point;}
 
     double delta_R(Parton other_parton);
@@ -81,9 +82,6 @@ class Parton
     void vSetPosIn(vector<double> x);
     vector<double> vGetPosIn() const;
 		
-    void vSetPosHy(vector<double> x);
-    vector<double> vGetPosHy() const;
-
     void vSetPos(vector<double> x);
     void SetPos(double x, double y, double z, double t);
     vector<double> vGetPos() const;

@@ -21,6 +21,9 @@ Jets::Jets(const InitData &DATA_in) : DATA(DATA_in)
   y_tol = 0.1;
   tau_tol = 0.1;
   eta_tol = 0.1;
+
+  hadfile.open("hadrons_list.dat");
+  negafile.open("sampled_partons_list.dat");
 }
 
 void Jets::InitJets(hydro_source &hydro_source_terms) {
@@ -148,7 +151,10 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 		
 		int d1=parton_list[iparton].GetD1();
 	        int d2=parton_list[iparton].GetD2();
-	        
+	       
+                parton_list[d1].set_hyper_point(parton_list[iparton].hyper_point);
+                parton_list[d2].set_hyper_point(parton_list[iparton].hyper_point);
+
 		parton_list[d1].vSetPos(parton_list[iparton].vGetPos());
 		parton_list[d2].vSetPos(parton_list[iparton].vGetPos());
 		
@@ -353,7 +359,13 @@ void Jets::FinalPartons() {
 	else {
 	    if (parton.vGetP()[3]!=0.) {
 	        final_parton_list.push_back(parton);
-	        //cout << " Lambda of this parton= " << parton.vGetP()[3]/parton.vGetPIn()[3] << endl;
+		//cout << " Lambda of this parton= " << parton.vGetP()[3]/parton.vGetPIn()[3] << endl;
+		//
+		// Medium Hadronization
+                if (DATA.single_parton==0) {
+		  SampleSurface(parton);
+		  HadronizeTherm();
+		}
 	    }
 	}
     }

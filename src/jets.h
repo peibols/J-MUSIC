@@ -37,6 +37,9 @@ class Jets {
     Pythia hpythia;	//Hadroniztion
     Rndm randi;
 
+    ofstream hadfile;
+    ofstream negafile;
+
     // For medium hadronization 
     bool surface_in_binary;
     bool boost_invariant;
@@ -44,6 +47,7 @@ class Jets {
     std::vector<SurfaceElement> surface;
     int bulk_deltaf_kind;
     double x_tol, y_tol, tau_tol, eta_tol;
+    vector<Parton> fin_and_therm_parton_list;
 
     std::vector<std::shared_ptr<jet>> binary_list;
 
@@ -78,6 +82,7 @@ class Jets {
 
     void InitLund();
     void HadronizeJets();
+    void HadronizeTherm();
     
     double GetFluidEnergy(double x, double y, double rap, SCGrid &arena_current);
     void GetFluidFlow(double x, double y, double rap, SCGrid &arena_current, double  *v_flow);

@@ -195,15 +195,10 @@ int Evolve::EvolveIt(SCGrid &arena_prev, SCGrid &arena_current,
 	    last_tau=current_tau;
         }
 	//Determine final parton_list
+	if (DATA.single_parton==0) jets.InitLund();
 	jets.FinalPartons();
         music_message << "Jets frozen at time step at tau = " << last_tau << " fm/c";
         music_message.flush("info");
-	//Hadronize surviving partons through Lund string model
-	if (DATA.single_parton==0) {
-	  jets.InitLund();
-	  jets.HadronizeJets();
-          music_message << "Jets Hadronization done"; 
-          music_message.flush("info");
 	}
     }
 

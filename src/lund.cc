@@ -14,24 +14,90 @@ void Jets::InitLund() {
     hpythia.readString("Next:numberShowEvent = 0");
     
     hpythia.readString("ProcessLevel:all = off");
-    
-    // Don't let pi0 decay
-    hpythia.readString("111:mayDecay = off");
-    // Don't let any hadron decay
-    //hpythia.readString("HadronLevel:Decay = off");
+   
+    hpythia.readString("StringFragmentation:TraceColours = on"); 
+    hpythia.readString("Fragmentation:setVertices = on");
 
-    //Added for life time cut in dcays
-    hpythia.readString("HadronLevel:Decay = on");
-    hpythia.readString("ParticleDecays:limitTau0=on");
-    hpythia.readString("ParticleDecays:tau0Max = 10");
+    // Don't let pi0 decay
+    //hpythia.readString("111:mayDecay = off");
+    // Don't let any hadron decay
+    hpythia.readString("HadronLevel:Decay = off");
 
     // And initialize
     hpythia.init();
+
+    hadron_list.clear();
 }
+
+void Jets::HadronizeTherm() {
+    
+    Event& event      = hpythia.event;
+    ParticleData& pdt = hpythia.particleData;
+
+    event.reset();
+
+    vector<Parton> pIn = fin_and_therm_parton_list;
+    
+    vector<double> hyper_point;
+
+    for(unsigned int ipart=0; ipart <  pIn.size(); ++ipart)
+    {  
+        vector<double> temp_hyper_point = pIn[ipart].hyper_point();
+        if (temp_hyper_point[3]!=-1.) hyper_point = temp_hyper_point;	   
+
+	int ide=pIn[ipart].GetId();
+        double px=pIn[ipart].vGetP()[0];
+        double py=pIn[ipart].vGetP()[1];
+        double pz=pIn[ipart].vGetP()[2];
+        double ee=pIn[ipart].vGetP()[3];
+        double mm=pdt.m0(int(ide));
+	int col=pIn[ipart].GetCol();
+	int acol=pIn[ipart].GetAcol();
+        ee=std::sqrt(px*px+py*py+pz*pz+mm*mm);
+        if (col==0 && acol==0 && (ide==21 || abs(ide)<=6)) {
+            cout<<"Stopping because of colorless parton trying to be introduced in PYTHIA string";
+            exit(0);
+        }
+        event.append(int(ide),23,col,acol,px,py,pz,ee,mm);
+    }
+    
+    double fin_pos[4];
+    fin_pos[0] = hyper_point[0];
+    fin_pos[1] = hyper_point[1];
+    fin_pos[2] = hyper_point[3]*sinh(hyper_point[2]);
+    fin_pos[3] = hyper_point[3]*cosh(hyper_point[2]);
+
+    hpythia.next();
+    hadfile <<"weight " << event_weight << " cross " << event_cross << endl;
+    
+    for (unsigned int ipart=0; ipart < event.size(); ++ipart)
+    {
+        if (event[ipart].isFinal())
+        {
+            int ide=hpythia.event[ipart].id();
+            vector<double> p {hpythia.event[ipart].px(),hpythia.event[ipart].py(),hpythia.event[ipart].pz(),hpythia.event[ipart].e()};
+            hadron_list.push_back ( Parton ( p, 0., hpythia.event[ipart].m(), 0, -1, -1, ide, "hadron", 0, 0, true ) );
+    
+            double had_pos[4];
+	    had_pos[0] = fin_pos[0] + pythia.event[i].xProd()*MM2FM;	    
+	    had_pos[1] = fin_pos[1] + pythia.event[i].yProd()*MM2FM;	    
+	    had_pos[2] = fin_pos[2] + pythia.event[i].zProd()*MM2FM;	    
+	    had_pos[3] = fin_pos[3] + pythia.event[i].tProd()*MM2FM;
+
+            hadron_list[hadron_list.size()-1].SetPos(had_pos[0],had_pos[1],had_pos[2],had_pos[3]);
+
+	    //Print on output file
+            hadfile << hpythia.event[ipart].px() << " " << hpythia.event[ipart].py() << " " << hpythia.event[ipart].pz() << " " << hpythia.event[ipart].e() << " " 
+		    << had_pos[0] << " " << had_pos[1] << " " << had_pos[2] << " " << had_pos[3] << " "
+		    << hpythia.event[ipart].id() << endl;
+        }
+    }
+
+    hadfile.close();   
+}
+
 void Jets::HadronizeJets() {
     
-    ofstream hadfile("hadrons_list.dat");
-  
     Event& event      = hpythia.event;
     ParticleData& pdt = hpythia.particleData;
 

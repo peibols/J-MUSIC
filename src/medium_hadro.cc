@@ -169,6 +169,7 @@ int Jets::get_number_of_lines_of_text_surface_file(string filename) {
 
 void Jets::SampleSurface(Parton parton)
 {
+    fin_and_therm_parton_list.clear();
 
     double tau_parton = parton.hyper_point()[3];
     double eta_s_parton = parton.hyper_point()[2];
@@ -177,6 +178,14 @@ void Jets::SampleSurface(Parton parton)
 
     if (tau_parton == -1) {
       cout << " Unassigned hyper-surface point! " << endl;
+      return;
+    }
+    
+    int p_col = parton.GetCol();
+    int p_acol = parton.GetAcol();
+
+    if ( p_col==0 && p_acol==0 ) {
+      fin_and_therm_parton_list.push_back( parton );
       return;
     }
 
@@ -196,13 +205,14 @@ void Jets::SampleSurface(Parton parton)
     double deltaphi = 2*PI/iphimax;
 
     double spectrum[ietamax][iptmax][iphimax]={{{0.}}};
+    double norm=0.;
 
     //double m = particleList[j].mass;
     //int deg = particleList[j].degeneracy;
 
     double mu_PCE = 0.; // not sure?
     double baryon = 1./3.;
-    double m = 0.33;  //just sampling u quarks for now
+    double m = 0.33;  //just sampling u and d quarks for now
     int sign = -1;
 
     // caching 
@@ -267,6 +277,7 @@ void Jets::SampleSurface(Parton parton)
       u_flow[ii] = surface[icell].u[ii];
     }
 
+    // Just ideal cooper-frye for now (improve!)
     double W00 = 0.0;  
     double W01 = 0.0;
     double W02 = 0.0;
@@ -388,7 +399,7 @@ void Jets::SampleSurface(Parton parton)
             }
             
 	    spectrum[ieta][ipt][iphi] += sum;
-                        
+      	    norm += sum;                  
 	  }
         }
       }
@@ -399,11 +410,57 @@ void Jets::SampleSurface(Parton parton)
 
     } // eta loop
 
-    //MonteCarlo
-    //
+    // Fill final parton
+    fin_and_therm_parton_list.push_back( parton );
+
+    for (int icol=0; icol<2; icol++) {
+	    
+      int the_col;
+      if ( icol==0 ) the_col = p_col;
+      else the_col = p_acol;
+      
+      if ( the_col==0) continue;
+
+      int id;
+      int t_col, t_acol;
+
+      if ( rand() > 0.5 ) id = 1;	// u quark
+      else id = 2;			// d quark
+      
+      if ( icol==0 ) id *= -1, t_col = 0, t_acol = the_col;
+      else t_col = the_col, t_acol = 0;
+      
+
+      // MonteCarlo
+      double nrand = 1.;
+      double dist = 0.;
+      int ipt, iphi;
+      do {
+        ieta = int(ietamax * rand());
+        ipt = int(iptmax * rand());
+        iphi = int(iphimax * rand());
+
+        dist = spectrum[ieta][ipt][iphi] / norm;
+        nrand = rand();
+      } while ( nrand > dist );
+
+      double pt = pt_array[ipt];
+      double mt = sqrt(pt*pt + m*m);
+      double px = pt*cos_phi[iphi];
+      double py = pt*sin_phi[iphi];
+      double eta = -etamax + ieta*deltaeta;
+      double pz = mt*sinh(eta);
+      double en = mt*cosh(eta);
+
+      // Fill thermal parton
+      fin_and_therm_parton_list.push_back ( Parton ( px, py, pz, en, 0., m, 0, -1, -1, id, "therm", t_col, t_acol, true ) );
+
+      negafile << px << " " << py << " " << pz << " " << en << " " << id << " "
+	          x_cell << " " << y_cell << " " << eta_s_cell << " " << tau_cel << endl;  
+
+    }
 
     // Clean up
-    
     delete[] cos_phi;
     delete[] sin_phi;
     delete[] pt_array;
