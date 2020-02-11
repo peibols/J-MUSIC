@@ -256,6 +256,8 @@ void Jets::SampleSurface(Parton parton)
     // Cell properties
     int icell = the_cell;
                 
+    double x_cell       = surface[icell].x[1];
+    double y_cell       = surface[icell].x[2];
     double tau        = surface[icell].x[0];
     double eta_s      = surface[icell].x[3];
     double cosh_eta_s = surface[icell].cosh_eta_s;
@@ -456,7 +458,7 @@ void Jets::SampleSurface(Parton parton)
       fin_and_therm_parton_list.push_back ( Parton ( px, py, pz, en, 0., m, 0, -1, -1, id, "therm", t_col, t_acol, true ) );
 
       negafile << px << " " << py << " " << pz << " " << en << " " << id << " "
-	          x_cell << " " << y_cell << " " << eta_s_cell << " " << tau_cel << endl;  
+	       << x_cell << " " << y_cell << " " << eta_s << " " << tau << endl;  
 
     }
 

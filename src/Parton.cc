@@ -156,6 +156,13 @@ void Parton::reset_momentum(double px, double py, double pz)
     _p[3]=en;
 }
 
+void Parton::SetPos(double x, double y, double z, double t)
+{
+  _x[0]=x;
+  _x[1]=y;
+  _x[2]=z;
+  _x[3]=t;
+}
 void Parton::vSetPos(vector<double> x)
 {
       _x=x;

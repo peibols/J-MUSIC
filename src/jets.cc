@@ -152,8 +152,11 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 		int d1=parton_list[iparton].GetD1();
 	        int d2=parton_list[iparton].GetD2();
 	       
-                parton_list[d1].set_hyper_point(parton_list[iparton].hyper_point);
-                parton_list[d2].set_hyper_point(parton_list[iparton].hyper_point);
+                parton_list[d1].set_hyper_point(parton_list[iparton].hyper_point());
+                parton_list[d2].set_hyper_point(parton_list[iparton].hyper_point());
+
+                parton_list[d1].set_last_temp(parton_list[iparton].last_temp());		
+                parton_list[d2].set_last_temp(parton_list[iparton].last_temp());		
 
 		parton_list[d1].vSetPos(parton_list[iparton].vGetPos());
 		parton_list[d2].vSetPos(parton_list[iparton].vGetPos());
@@ -300,10 +303,9 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
 
     //Store position of hyper-surface crossing
     if (f_temp < Tc && parton.last_temp() >= Tc) {
-      parton.set_last_temp(f_temp);
       parton.set_hyper_point( x, y, rap, tau );
     }
-
+    parton.set_last_temp(f_temp);
 
     if (tau>=DATA.tau0 && DATA.single_parton==1) {
     //if (tau>=DATA.tau0) {  

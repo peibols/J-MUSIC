@@ -199,7 +199,6 @@ int Evolve::EvolveIt(SCGrid &arena_prev, SCGrid &arena_current,
 	jets.FinalPartons();
         music_message << "Jets frozen at time step at tau = " << last_tau << " fm/c";
         music_message.flush("info");
-	}
     }
 
     music_message.info("Finished.");

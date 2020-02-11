@@ -79,10 +79,10 @@ void Jets::HadronizeTherm() {
             hadron_list.push_back ( Parton ( p, 0., hpythia.event[ipart].m(), 0, -1, -1, ide, "hadron", 0, 0, true ) );
     
             double had_pos[4];
-	    had_pos[0] = fin_pos[0] + pythia.event[i].xProd()*MM2FM;	    
-	    had_pos[1] = fin_pos[1] + pythia.event[i].yProd()*MM2FM;	    
-	    had_pos[2] = fin_pos[2] + pythia.event[i].zProd()*MM2FM;	    
-	    had_pos[3] = fin_pos[3] + pythia.event[i].tProd()*MM2FM;
+	    had_pos[0] = fin_pos[0] + pythia.event[ipart].xProd()*MM2FM;	    
+	    had_pos[1] = fin_pos[1] + pythia.event[ipart].yProd()*MM2FM;	    
+	    had_pos[2] = fin_pos[2] + pythia.event[ipart].zProd()*MM2FM;	    
+	    had_pos[3] = fin_pos[3] + pythia.event[ipart].tProd()*MM2FM;
 
             hadron_list[hadron_list.size()-1].SetPos(had_pos[0],had_pos[1],had_pos[2],had_pos[3]);
 
