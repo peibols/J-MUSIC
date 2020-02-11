@@ -196,6 +196,7 @@ int Evolve::EvolveIt(SCGrid &arena_prev, SCGrid &arena_current,
         }
 	//Determine final parton_list
 	if (DATA.single_parton==0) jets.InitLund();
+	jets.ReadFreezeOutSurface();
 	jets.FinalPartons();
         music_message << "Jets frozen at time step at tau = " << last_tau << " fm/c";
         music_message.flush("info");

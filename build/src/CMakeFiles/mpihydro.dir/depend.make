@@ -38,6 +38,7 @@ src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/pe
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -78,6 +79,9 @@ src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/pe
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -88,7 +92,6 @@ src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/pe
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/advance.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/cell.cpp.o: ../src/cell.cpp
 
@@ -147,6 +150,7 @@ src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/pei
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -187,6 +191,9 @@ src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/pei
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -197,7 +204,6 @@ src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/pei
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/evolve.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/freeze.cpp.o: ../src/./data.h
 src/CMakeFiles/mpihydro.dir/freeze.cpp.o: ../src/./data_struct.h
@@ -281,6 +287,7 @@ src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -321,6 +328,9 @@ src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -331,7 +341,6 @@ src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/jets.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: ../src/./freeze.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: ../src/Parton.h
@@ -353,6 +362,7 @@ src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -393,6 +403,9 @@ src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -403,7 +416,6 @@ src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/lund.cc.o: ../src/./freeze.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: ../src/Parton.h
@@ -425,6 +437,7 @@ src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -465,6 +478,9 @@ src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -475,7 +491,6 @@ src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/lund.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/main.cpp.o: ../src/./cell.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: ../src/./data.h
@@ -516,6 +531,7 @@ src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibo
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -556,6 +572,9 @@ src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibo
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -566,7 +585,6 @@ src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibo
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/main.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: ../src/././freeze.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: ../src/./Parton.h
@@ -588,6 +606,7 @@ src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-a
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -628,6 +647,9 @@ src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-a
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -638,7 +660,6 @@ src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-a
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/medium_hadro.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/minmod.cpp.o: ../src/data.h
 src/CMakeFiles/mpihydro.dir/minmod.cpp.o: ../src/data_struct.h
@@ -687,6 +708,7 @@ src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peib
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -727,6 +749,9 @@ src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peib
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -737,7 +762,6 @@ src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peib
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/music.cpp.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.o: ../src/music_logo.cpp
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.o: ../src/music_logo.h
@@ -792,6 +816,7 @@ src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/BoseEinstein.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourReconnection.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/ColourTracing.h
+src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/DeuteronProduction.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Event.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationFlavZpT.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/FragmentationSystems.h
@@ -832,6 +857,9 @@ src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaOnia.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaProcess.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SigmaTotal.h
+src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleSpaceShower.h
+src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleTimeShower.h
+src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SimpleWeakShowerMEs.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/SpaceShower.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/StandardModel.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/Streams.h
@@ -842,7 +870,6 @@ src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibol
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TauDecays.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/TimeShower.h
 src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/UserHooks.h
-src/CMakeFiles/mpihydro.dir/tree.cc.o: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include/Pythia8/WeakShowerMEs.h
 
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o: ../src/cell.h
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o: ../src/data.h

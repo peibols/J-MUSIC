@@ -5,8 +5,10 @@ using namespace std;
 void Jets::ReadFreezeOutSurface() {
     music_message.info("reading freeze-out surface");
     
+    system("./surface_catter.sh");
+
     ostringstream surfdat_stream;
-    surfdat_stream << "./surface.dat";
+    surfdat_stream << "./surface_eps_0.1928.dat";
 
     // new counting, mac compatible ...
     if (surface_in_binary) {
@@ -280,39 +282,6 @@ void Jets::SampleSurface(Parton parton)
     }
 
     // Just ideal cooper-frye for now (improve!)
-    double W00 = 0.0;  
-    double W01 = 0.0;
-    double W02 = 0.0;
-    double W03 = 0.0;
-    double W11 = 0.0;
-    double W12 = 0.0;
-    double W13 = 0.0;
-    double W22 = 0.0;
-    double W23 = 0.0;
-    double W33 = 0.0;
-    int flag_shear_deltaf = 0;
-   
-    double Pi_bulk = 0.0;
-    int flag_bulk_deltaf = 0;
-
-    double qmu_0 = 0.0;
-    double qmu_1 = 0.0;
-    double qmu_2 = 0.0;
-    double qmu_3 = 0.0;
-    double deltaf_qmu_coeff = 1.0;
-    double deltaf_qmu_coeff_14mom_DV = 0.0;
-    double deltaf_qmu_coeff_14mom_BV = 0.0;
-    int flag_qmu_deltaf = 0;
-    
-    double rhoB = 0.0;
-    
-    double eps_plus_P_over_T = surface[icell].eps_plus_p_over_T_FO;
-    double prefactor_shear = 1./(2.*eps_plus_P_over_T*T*T*T)*hbarc; 
-    // fm^4/GeV^2
-    double prefactor_qmu = rhoB/(eps_plus_P_over_T*T);   // 1/GeV    
-    //
-
-    double alpha=0.;
     int ieta;
     for (ieta = 0; ieta < ietamax; ieta++) {
       double eta = -etamax + ieta*deltaeta;
@@ -366,28 +335,13 @@ void Jets::SampleSurface(Parton parton)
             // this is the equilibrium f, f_0:        
 	    double f = 1./(exp(1./T*(E - mu)) + sign);
                      
-            double delta_f_shear = 0.0;
-            double delta_f_bulk = 0.0;
-                            
-            // delta f for qmu
-            double qmufactor = 0.0;
-            double delta_f_qmu = 0.0;
+            double total_deltaf = 0.;
 
-            double max_ratio = 1.0;
-            double total_deltaf = (delta_f_shear
-                                 + delta_f_bulk
-                                 + delta_f_qmu);
-
-            if (fabs(total_deltaf)/f > max_ratio) {
-              total_deltaf *= f/fabs(total_deltaf);
-            }
             sum = (f + total_deltaf)*pdSigma;
                      
             if (sum > 10000) {
               music_message << "sum>10000 in summation. sum = "
                             << sum 
-                            << ", f=" << f << ", deltaf="
-                            << delta_f_shear
                             << ", pdSigma=" << pdSigma << ", T=" << T 
                             << ", E=" << E << ", mu=" << mu;
               music_message.flush("warning");
