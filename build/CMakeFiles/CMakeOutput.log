@@ -1,4 +1,4 @@
-The system is: Linux - 3.10.0-957.27.2.el7.x86_64 - x86_64
+The system is: Linux - 3.10.0-1062.9.1.el7.x86_64 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /cvmfs/soft.computecanada.ca/custom/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/3.8.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/3.8.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ 
@@ -23,76 +23,78 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_883d0/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_883d0.dir/build.make CMakeFiles/cmTC_883d0.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_883d0.dir/testCCompiler.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_883d0.dir/testCCompiler.c.o   -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_883d0
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_883d0.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_883d0.dir/testCCompiler.c.o  -o cmTC_883d0 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_5a992/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5a992.dir/build.make CMakeFiles/cmTC_5a992.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a992.dir/testCCompiler.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_5a992.dir/testCCompiler.c.o   -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_5a992
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a992.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_5a992.dir/testCCompiler.c.o  -o cmTC_5a992 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_89e8d/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_89e8d.dir/build.make CMakeFiles/cmTC_89e8d.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o   -c /cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_89e8d
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e8d.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc     -v -rdynamic CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o  -o cmTC_89e8d 
+Run Build Command:"/usr/bin/gmake" "cmTC_b2606/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b2606.dir/build.make CMakeFiles/cmTC_b2606.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o   -c /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b2606
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2606.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc     -v -rdynamic CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o  -o cmTC_b2606 
 Using built-in specs.
 COLLECT_GCC=gcc
-COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
 Target: x86_64-pc-linux-gnu
 Configured with: 
 Thread model: posix
 gcc version 7.3.0 (GCC) 
-COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89e8d' '-mtune=generic' '-march=x86-64'
- /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOBhVoT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_89e8d /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89e8d' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b2606' '-mtune=generic' '-march=x86-64'
+ /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpXuvtO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_b2606 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b2606' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_89e8d/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_89e8d.dir/build.make CMakeFiles/cmTC_89e8d.dir/build]
-  ignore line: [gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o   -c /cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_89e8d]
-  ignore line: [/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89e8d.dir/link.txt --verbose=1]
-  ignore line: [/cvmfs/soft.computecanada.ca/custom/bin/cc     -v -rdynamic CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o  -o cmTC_89e8d ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_b2606/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_b2606.dir/build.make CMakeFiles/cmTC_b2606.dir/build]
+  ignore line: [gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/cvmfs/soft.computecanada.ca/custom/bin/cc    -o CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o   -c /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_b2606]
+  ignore line: [/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2606.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/soft.computecanada.ca/custom/bin/cc     -v -rdynamic CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o  -o cmTC_b2606 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: ]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 7.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_89e8d' '-mtune=generic' '-march=x86-64']
-  link line: [ /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOBhVoT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_89e8d /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o]
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2] ==> ignore
+  ignore line: [COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b2606' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpXuvtO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_b2606 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o]
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccOBhVoT.res] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccpXuvtO.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -105,15 +107,15 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_89e8d] ==> ignore
+    arg [cmTC_b2606] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o] ==> ignore
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o] ==> ignore
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64]
@@ -126,8 +128,8 @@ Parsed C implicit link information from above output:
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..]
-    arg [CMakeFiles/cmTC_89e8d.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTC_b2606.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -137,7 +139,7 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
@@ -146,8 +148,8 @@ Parsed C implicit link information from above output:
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib64]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64]
@@ -160,26 +162,26 @@ Parsed C implicit link information from above output:
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib]
   implicit libs: [c]
-  implicit dirs: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib]
+  implicit dirs: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_618bc/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_618bc.dir/build.make CMakeFiles/cmTC_618bc.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_618bc.dir/feature_tests.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c11 -o CMakeFiles/cmTC_618bc.dir/feature_tests.c.o   -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_618bc
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_618bc.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_618bc.dir/feature_tests.c.o  -o cmTC_618bc 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_b2abc/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b2abc.dir/build.make CMakeFiles/cmTC_b2abc.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2abc.dir/feature_tests.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c11 -o CMakeFiles/cmTC_b2abc.dir/feature_tests.c.o   -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b2abc
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2abc.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_b2abc.dir/feature_tests.c.o  -o cmTC_b2abc 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,17 +191,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_4ea9c/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_4ea9c.dir/build.make CMakeFiles/cmTC_4ea9c.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4ea9c.dir/feature_tests.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c99 -o CMakeFiles/cmTC_4ea9c.dir/feature_tests.c.o   -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_4ea9c
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ea9c.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_4ea9c.dir/feature_tests.c.o  -o cmTC_4ea9c 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_13774/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_13774.dir/build.make CMakeFiles/cmTC_13774.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13774.dir/feature_tests.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c99 -o CMakeFiles/cmTC_13774.dir/feature_tests.c.o   -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_13774
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13774.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_13774.dir/feature_tests.c.o  -o cmTC_13774 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -209,17 +211,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_0cdaa/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_0cdaa.dir/build.make CMakeFiles/cmTC_0cdaa.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0cdaa.dir/feature_tests.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c90 -o CMakeFiles/cmTC_0cdaa.dir/feature_tests.c.o   -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0cdaa
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cdaa.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_0cdaa.dir/feature_tests.c.o  -o cmTC_0cdaa 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_76a8a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_76a8a.dir/build.make CMakeFiles/cmTC_76a8a.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76a8a.dir/feature_tests.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc   -std=c90 -o CMakeFiles/cmTC_76a8a.dir/feature_tests.c.o   -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_76a8a
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76a8a.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc      -rdynamic CMakeFiles/cmTC_76a8a.dir/feature_tests.c.o  -o cmTC_76a8a 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -227,73 +229,75 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_6b5f7/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_6b5f7.dir/build.make CMakeFiles/cmTC_6b5f7.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6b5f7.dir/testCXXCompiler.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_6b5f7.dir/testCXXCompiler.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_6b5f7
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b5f7.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_6b5f7.dir/testCXXCompiler.cxx.o  -o cmTC_6b5f7 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_9448b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9448b.dir/build.make CMakeFiles/cmTC_9448b.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9448b.dir/testCXXCompiler.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_9448b.dir/testCXXCompiler.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9448b
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9448b.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_9448b.dir/testCXXCompiler.cxx.o  -o cmTC_9448b 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_6f4e2/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_6f4e2.dir/build.make CMakeFiles/cmTC_6f4e2.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_6f4e2
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f4e2.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++      -v -rdynamic CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6f4e2 
+Run Build Command:"/usr/bin/gmake" "cmTC_de922/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_de922.dir/build.make CMakeFiles/cmTC_de922.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_de922
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de922.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++      -v -rdynamic CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_de922 
 Using built-in specs.
 COLLECT_GCC=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++
-COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
 Target: x86_64-pc-linux-gnu
 Configured with: 
 Thread model: posix
 gcc version 7.3.0 (GCC) 
-COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6f4e2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOR3ves.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_6f4e2 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6f4e2' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_de922' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUEDiEx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_de922 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_de922' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_6f4e2/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_6f4e2.dir/build.make CMakeFiles/cmTC_6f4e2.dir/build]
-  ignore line: [gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_6f4e2]
-  ignore line: [/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f4e2.dir/link.txt --verbose=1]
-  ignore line: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++      -v -rdynamic CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6f4e2 ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_de922/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_de922.dir/build.make CMakeFiles/cmTC_de922.dir/build]
+  ignore line: [gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++     -o CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o -c /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_de922]
+  ignore line: [/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de922.dir/link.txt --verbose=1]
+  ignore line: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++      -v -rdynamic CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_de922 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: ]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 7.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_6f4e2' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOR3ves.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_6f4e2 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o]
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2] ==> ignore
+  ignore line: [COMPILER_PATH=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4/:/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64/:/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64/:/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/:/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_de922' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2 -plugin /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUEDiEx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2 -o cmTC_de922 /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0 -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4 -L/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64 -L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64 -L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib -L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../.. CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o]
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccOR3ves.res] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/libexec/gcc/x86_64-pc-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccUEDiEx.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -306,15 +310,15 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/store/j0q2shlbxr4ga8jl4vfbisfx8csx219c-glibc-2.24/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6f4e2] ==> ignore
+    arg [cmTC_de922] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crt1.o] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crti.o] ==> ignore
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtbegin.o] ==> ignore
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64]
@@ -327,8 +331,8 @@ Parsed CXX implicit link information from above output:
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64]
     arg [-L/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64] ==> dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64]
     arg [-L/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib] ==> dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib]
-    arg [-L/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..]
-    arg [CMakeFiles/cmTC_6f4e2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-L/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTC_de922.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,7 +340,7 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/crtend.o] ==> ignore
     arg [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
@@ -345,8 +349,8 @@ Parsed CXX implicit link information from above output:
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib64]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../../../lib64] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib64]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64]
@@ -359,26 +363,26 @@ Parsed CXX implicit link information from above output:
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64]
   collapse library dir [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64] ==> [/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64]
   collapse library dir [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib] ==> [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib]
-  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> [/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib]
+  collapse library dir [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0/../../..] ==> [/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib;/cvmfs/soft.computecanada.ca/nix/store/rrwlh3bahkdwnbjvzm0nkq3504v451yl-gfortran-7.3.0/lib]
+  implicit dirs: [/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib64;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib/gcc/x86_64-pc-linux-gnu/7.3.0;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/openmpi/3.1.2/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/ifort/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/tbb/lib/intel64/gcc4.4;/cvmfs/restricted.computecanada.ca/easybuild/software/2017/Core/icc/2018.3.222/compilers_and_libraries_2018.3.222/linux/compiler/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/lib;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/mkl/lib/intel64;/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/imkl/2018.3.222/lib/intel64;/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib;/cvmfs/soft.computecanada.ca/nix/store/c9qaklf3dvjvlbky3fiakmafb1p8l106-gfortran-7.3.0/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_8895f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_8895f.dir/build.make CMakeFiles/cmTC_8895f.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_8895f.dir/feature_tests.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++1z -o CMakeFiles/cmTC_8895f.dir/feature_tests.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8895f
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8895f.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_8895f.dir/feature_tests.cxx.o  -o cmTC_8895f 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_d0c82/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d0c82.dir/build.make CMakeFiles/cmTC_d0c82.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0c82.dir/feature_tests.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++1z -o CMakeFiles/cmTC_d0c82.dir/feature_tests.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d0c82
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0c82.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_d0c82.dir/feature_tests.cxx.o  -o cmTC_d0c82 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -441,17 +445,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_d8b9f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_d8b9f.dir/build.make CMakeFiles/cmTC_d8b9f.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d8b9f.dir/feature_tests.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++14 -o CMakeFiles/cmTC_d8b9f.dir/feature_tests.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d8b9f
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8b9f.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_d8b9f.dir/feature_tests.cxx.o  -o cmTC_d8b9f 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_bc77f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bc77f.dir/build.make CMakeFiles/cmTC_bc77f.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bc77f.dir/feature_tests.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++14 -o CMakeFiles/cmTC_bc77f.dir/feature_tests.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bc77f
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc77f.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_bc77f.dir/feature_tests.cxx.o  -o cmTC_bc77f 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -514,17 +518,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_ba1bd/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_ba1bd.dir/build.make CMakeFiles/cmTC_ba1bd.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ba1bd.dir/feature_tests.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++11 -o CMakeFiles/cmTC_ba1bd.dir/feature_tests.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ba1bd
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba1bd.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_ba1bd.dir/feature_tests.cxx.o  -o cmTC_ba1bd 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_d78fa/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d78fa.dir/build.make CMakeFiles/cmTC_d78fa.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d78fa.dir/feature_tests.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++11 -o CMakeFiles/cmTC_d78fa.dir/feature_tests.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d78fa
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d78fa.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_d78fa.dir/feature_tests.cxx.o  -o cmTC_d78fa 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -587,17 +591,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_29a26/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_29a26.dir/build.make CMakeFiles/cmTC_29a26.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_29a26.dir/feature_tests.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++98 -o CMakeFiles/cmTC_29a26.dir/feature_tests.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_29a26
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29a26.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_29a26.dir/feature_tests.cxx.o  -o cmTC_29a26 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_e1f0d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e1f0d.dir/build.make CMakeFiles/cmTC_e1f0d.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e1f0d.dir/feature_tests.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -std=c++98 -o CMakeFiles/cmTC_e1f0d.dir/feature_tests.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e1f0d
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1f0d.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++       -rdynamic CMakeFiles/cmTC_e1f0d.dir/feature_tests.cxx.o  -o cmTC_e1f0d 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -658,17 +662,17 @@ gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/bui
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_f1c21/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_f1c21.dir/build.make CMakeFiles/cmTC_f1c21.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f1c21.dir/src.c.o
-/cvmfs/soft.computecanada.ca/custom/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_f1c21.dir/src.c.o   -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_f1c21
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1c21.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/custom/bin/cc  -DOpenMP_FLAG_DETECTED -fopenmp    -rdynamic CMakeFiles/cmTC_f1c21.dir/src.c.o  -o cmTC_f1c21 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_950c1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_950c1.dir/build.make CMakeFiles/cmTC_950c1.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_950c1.dir/src.c.o
+/cvmfs/soft.computecanada.ca/custom/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_950c1.dir/src.c.o   -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_950c1
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_950c1.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/custom/bin/cc  -DOpenMP_FLAG_DETECTED -fopenmp    -rdynamic CMakeFiles/cmTC_950c1.dir/src.c.o  -o cmTC_950c1 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 
@@ -682,17 +686,17 @@ int main() {
 }
 
 Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
-Change Dir: /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_89eb0/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_89eb0.dir/build.make CMakeFiles/cmTC_89eb0.dir/build
-gmake[1]: Entering directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_89eb0.dir/src.cxx.o
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_89eb0.dir/src.cxx.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_89eb0
-/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89eb0.dir/link.txt --verbose=1
-/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++   -DOpenMP_FLAG_DETECTED -fopenmp    -rdynamic CMakeFiles/cmTC_89eb0.dir/src.cxx.o  -o cmTC_89eb0 
-gmake[1]: Leaving directory `/lustre03/project/6004700/peibols/music_testing/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/gmake" "cmTC_1d219/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1d219.dir/build.make CMakeFiles/cmTC_1d219.dir/build
+gmake[1]: Entering directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d219.dir/src.cxx.o
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_1d219.dir/src.cxx.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1d219
+/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d219.dir/link.txt --verbose=1
+/cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++   -DOpenMP_FLAG_DETECTED -fopenmp    -rdynamic CMakeFiles/cmTC_1d219.dir/src.cxx.o  -o cmTC_1d219 
+gmake[1]: Leaving directory `/lustre03/project/6004700/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/CMakeTmp'
 
 Source file was:
 

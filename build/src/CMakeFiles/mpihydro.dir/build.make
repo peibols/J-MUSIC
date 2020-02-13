@@ -43,10 +43,10 @@ RM = /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cma
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peibols/projects/rrg-jeon-ac/peibols/music_testing
+CMAKE_SOURCE_DIR = /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build
+CMAKE_BINARY_DIR = /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/mpihydro.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/mpihydro.dir/flags.make
 
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o: ../src/u_derivative.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/u_derivative.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/u_derivative.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/u_derivative.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/u_derivative.cpp
 
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/u_derivative.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/u_derivative.cpp > CMakeFiles/mpihydro.dir/u_derivative.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/u_derivative.cpp > CMakeFiles/mpihydro.dir/u_derivative.cpp.i
 
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/u_derivative.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/u_derivative.cpp -o CMakeFiles/mpihydro.dir/u_derivative.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/u_derivative.cpp -o CMakeFiles/mpihydro.dir/u_derivative.cpp.s
 
 src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/mpihydro.dir/u_derivative.cpp.o.provides.build: src/CMakeFiles/mp
 
 src/CMakeFiles/mpihydro.dir/dissipative.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/dissipative.cpp.o: ../src/dissipative.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mpihydro.dir/dissipative.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/dissipative.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/dissipative.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mpihydro.dir/dissipative.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/dissipative.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/dissipative.cpp
 
 src/CMakeFiles/mpihydro.dir/dissipative.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/dissipative.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/dissipative.cpp > CMakeFiles/mpihydro.dir/dissipative.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/dissipative.cpp > CMakeFiles/mpihydro.dir/dissipative.cpp.i
 
 src/CMakeFiles/mpihydro.dir/dissipative.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/dissipative.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/dissipative.cpp -o CMakeFiles/mpihydro.dir/dissipative.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/dissipative.cpp -o CMakeFiles/mpihydro.dir/dissipative.cpp.s
 
 src/CMakeFiles/mpihydro.dir/dissipative.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/mpihydro.dir/dissipative.cpp.o.provides.build: src/CMakeFiles/mpi
 
 src/CMakeFiles/mpihydro.dir/main.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mpihydro.dir/main.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/main.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mpihydro.dir/main.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/main.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/main.cpp
 
 src/CMakeFiles/mpihydro.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/main.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/main.cpp > CMakeFiles/mpihydro.dir/main.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/main.cpp > CMakeFiles/mpihydro.dir/main.cpp.i
 
 src/CMakeFiles/mpihydro.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/main.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/main.cpp -o CMakeFiles/mpihydro.dir/main.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/main.cpp -o CMakeFiles/mpihydro.dir/main.cpp.s
 
 src/CMakeFiles/mpihydro.dir/main.cpp.o.requires:
 
@@ -131,16 +131,16 @@ src/CMakeFiles/mpihydro.dir/main.cpp.o.provides.build: src/CMakeFiles/mpihydro.d
 
 src/CMakeFiles/mpihydro.dir/cell.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/cell.cpp.o: ../src/cell.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mpihydro.dir/cell.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/cell.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cell.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mpihydro.dir/cell.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/cell.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cell.cpp
 
 src/CMakeFiles/mpihydro.dir/cell.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/cell.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cell.cpp > CMakeFiles/mpihydro.dir/cell.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cell.cpp > CMakeFiles/mpihydro.dir/cell.cpp.i
 
 src/CMakeFiles/mpihydro.dir/cell.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/cell.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cell.cpp -o CMakeFiles/mpihydro.dir/cell.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cell.cpp -o CMakeFiles/mpihydro.dir/cell.cpp.s
 
 src/CMakeFiles/mpihydro.dir/cell.cpp.o.requires:
 
@@ -155,16 +155,16 @@ src/CMakeFiles/mpihydro.dir/cell.cpp.o.provides.build: src/CMakeFiles/mpihydro.d
 
 src/CMakeFiles/mpihydro.dir/init.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/init.cpp.o: ../src/init.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mpihydro.dir/init.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/init.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/init.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mpihydro.dir/init.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/init.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/init.cpp
 
 src/CMakeFiles/mpihydro.dir/init.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/init.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/init.cpp > CMakeFiles/mpihydro.dir/init.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/init.cpp > CMakeFiles/mpihydro.dir/init.cpp.i
 
 src/CMakeFiles/mpihydro.dir/init.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/init.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/init.cpp -o CMakeFiles/mpihydro.dir/init.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/init.cpp -o CMakeFiles/mpihydro.dir/init.cpp.s
 
 src/CMakeFiles/mpihydro.dir/init.cpp.o.requires:
 
@@ -179,16 +179,16 @@ src/CMakeFiles/mpihydro.dir/init.cpp.o.provides.build: src/CMakeFiles/mpihydro.d
 
 src/CMakeFiles/mpihydro.dir/reconst.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/reconst.cpp.o: ../src/reconst.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mpihydro.dir/reconst.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/reconst.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reconst.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mpihydro.dir/reconst.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/reconst.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reconst.cpp
 
 src/CMakeFiles/mpihydro.dir/reconst.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/reconst.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reconst.cpp > CMakeFiles/mpihydro.dir/reconst.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reconst.cpp > CMakeFiles/mpihydro.dir/reconst.cpp.i
 
 src/CMakeFiles/mpihydro.dir/reconst.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/reconst.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reconst.cpp -o CMakeFiles/mpihydro.dir/reconst.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reconst.cpp -o CMakeFiles/mpihydro.dir/reconst.cpp.s
 
 src/CMakeFiles/mpihydro.dir/reconst.cpp.o.requires:
 
@@ -203,16 +203,16 @@ src/CMakeFiles/mpihydro.dir/reconst.cpp.o.provides.build: src/CMakeFiles/mpihydr
 
 src/CMakeFiles/mpihydro.dir/minmod.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/minmod.cpp.o: ../src/minmod.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mpihydro.dir/minmod.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/minmod.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/minmod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mpihydro.dir/minmod.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/minmod.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/minmod.cpp
 
 src/CMakeFiles/mpihydro.dir/minmod.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/minmod.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/minmod.cpp > CMakeFiles/mpihydro.dir/minmod.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/minmod.cpp > CMakeFiles/mpihydro.dir/minmod.cpp.i
 
 src/CMakeFiles/mpihydro.dir/minmod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/minmod.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/minmod.cpp -o CMakeFiles/mpihydro.dir/minmod.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/minmod.cpp -o CMakeFiles/mpihydro.dir/minmod.cpp.s
 
 src/CMakeFiles/mpihydro.dir/minmod.cpp.o.requires:
 
@@ -227,16 +227,16 @@ src/CMakeFiles/mpihydro.dir/minmod.cpp.o.provides.build: src/CMakeFiles/mpihydro
 
 src/CMakeFiles/mpihydro.dir/music.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/music.cpp.o: ../src/music.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mpihydro.dir/music.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/music.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/mpihydro.dir/music.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/music.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music.cpp
 
 src/CMakeFiles/mpihydro.dir/music.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/music.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music.cpp > CMakeFiles/mpihydro.dir/music.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music.cpp > CMakeFiles/mpihydro.dir/music.cpp.i
 
 src/CMakeFiles/mpihydro.dir/music.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/music.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music.cpp -o CMakeFiles/mpihydro.dir/music.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music.cpp -o CMakeFiles/mpihydro.dir/music.cpp.s
 
 src/CMakeFiles/mpihydro.dir/music.cpp.o.requires:
 
@@ -251,16 +251,16 @@ src/CMakeFiles/mpihydro.dir/music.cpp.o.provides.build: src/CMakeFiles/mpihydro.
 
 src/CMakeFiles/mpihydro.dir/cornelius.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/cornelius.cpp.o: ../src/cornelius.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/mpihydro.dir/cornelius.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/cornelius.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cornelius.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/mpihydro.dir/cornelius.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/cornelius.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cornelius.cpp
 
 src/CMakeFiles/mpihydro.dir/cornelius.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/cornelius.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cornelius.cpp > CMakeFiles/mpihydro.dir/cornelius.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cornelius.cpp > CMakeFiles/mpihydro.dir/cornelius.cpp.i
 
 src/CMakeFiles/mpihydro.dir/cornelius.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/cornelius.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/cornelius.cpp -o CMakeFiles/mpihydro.dir/cornelius.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/cornelius.cpp -o CMakeFiles/mpihydro.dir/cornelius.cpp.s
 
 src/CMakeFiles/mpihydro.dir/cornelius.cpp.o.requires:
 
@@ -275,16 +275,16 @@ src/CMakeFiles/mpihydro.dir/cornelius.cpp.o.provides.build: src/CMakeFiles/mpihy
 
 src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o: ../src/hydro_source.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/hydro_source.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/hydro_source.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/hydro_source.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/hydro_source.cpp
 
 src/CMakeFiles/mpihydro.dir/hydro_source.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/hydro_source.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/hydro_source.cpp > CMakeFiles/mpihydro.dir/hydro_source.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/hydro_source.cpp > CMakeFiles/mpihydro.dir/hydro_source.cpp.i
 
 src/CMakeFiles/mpihydro.dir/hydro_source.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/hydro_source.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/hydro_source.cpp -o CMakeFiles/mpihydro.dir/hydro_source.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/hydro_source.cpp -o CMakeFiles/mpihydro.dir/hydro_source.cpp.s
 
 src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o.requires:
 
@@ -299,16 +299,16 @@ src/CMakeFiles/mpihydro.dir/hydro_source.cpp.o.provides.build: src/CMakeFiles/mp
 
 src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o: ../src/pretty_ostream.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/pretty_ostream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/pretty_ostream.cpp
 
 src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/pretty_ostream.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/pretty_ostream.cpp > CMakeFiles/mpihydro.dir/pretty_ostream.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/pretty_ostream.cpp > CMakeFiles/mpihydro.dir/pretty_ostream.cpp.i
 
 src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/pretty_ostream.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/pretty_ostream.cpp -o CMakeFiles/mpihydro.dir/pretty_ostream.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/pretty_ostream.cpp -o CMakeFiles/mpihydro.dir/pretty_ostream.cpp.s
 
 src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o.requires:
 
@@ -323,16 +323,16 @@ src/CMakeFiles/mpihydro.dir/pretty_ostream.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/mpihydro.dir/freeze.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/freeze.cpp.o: ../src/freeze.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/mpihydro.dir/freeze.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/freeze.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/mpihydro.dir/freeze.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/freeze.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze.cpp
 
 src/CMakeFiles/mpihydro.dir/freeze.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/freeze.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze.cpp > CMakeFiles/mpihydro.dir/freeze.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze.cpp > CMakeFiles/mpihydro.dir/freeze.cpp.i
 
 src/CMakeFiles/mpihydro.dir/freeze.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/freeze.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze.cpp -o CMakeFiles/mpihydro.dir/freeze.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze.cpp -o CMakeFiles/mpihydro.dir/freeze.cpp.s
 
 src/CMakeFiles/mpihydro.dir/freeze.cpp.o.requires:
 
@@ -347,16 +347,16 @@ src/CMakeFiles/mpihydro.dir/freeze.cpp.o.provides.build: src/CMakeFiles/mpihydro
 
 src/CMakeFiles/mpihydro.dir/grid_info.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/grid_info.cpp.o: ../src/grid_info.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/mpihydro.dir/grid_info.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/grid_info.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid_info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/mpihydro.dir/grid_info.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/grid_info.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid_info.cpp
 
 src/CMakeFiles/mpihydro.dir/grid_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/grid_info.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid_info.cpp > CMakeFiles/mpihydro.dir/grid_info.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid_info.cpp > CMakeFiles/mpihydro.dir/grid_info.cpp.i
 
 src/CMakeFiles/mpihydro.dir/grid_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/grid_info.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid_info.cpp -o CMakeFiles/mpihydro.dir/grid_info.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid_info.cpp -o CMakeFiles/mpihydro.dir/grid_info.cpp.s
 
 src/CMakeFiles/mpihydro.dir/grid_info.cpp.o.requires:
 
@@ -371,16 +371,16 @@ src/CMakeFiles/mpihydro.dir/grid_info.cpp.o.provides.build: src/CMakeFiles/mpihy
 
 src/CMakeFiles/mpihydro.dir/grid.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/grid.cpp.o: ../src/grid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/mpihydro.dir/grid.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/grid.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/mpihydro.dir/grid.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/grid.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid.cpp
 
 src/CMakeFiles/mpihydro.dir/grid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/grid.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid.cpp > CMakeFiles/mpihydro.dir/grid.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid.cpp > CMakeFiles/mpihydro.dir/grid.cpp.i
 
 src/CMakeFiles/mpihydro.dir/grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/grid.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/grid.cpp -o CMakeFiles/mpihydro.dir/grid.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/grid.cpp -o CMakeFiles/mpihydro.dir/grid.cpp.s
 
 src/CMakeFiles/mpihydro.dir/grid.cpp.o.requires:
 
@@ -395,16 +395,16 @@ src/CMakeFiles/mpihydro.dir/grid.cpp.o.provides.build: src/CMakeFiles/mpihydro.d
 
 src/CMakeFiles/mpihydro.dir/util.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/util.cpp.o: ../src/util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/mpihydro.dir/util.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/util.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/mpihydro.dir/util.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/util.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/util.cpp
 
 src/CMakeFiles/mpihydro.dir/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/util.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/util.cpp > CMakeFiles/mpihydro.dir/util.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/util.cpp > CMakeFiles/mpihydro.dir/util.cpp.i
 
 src/CMakeFiles/mpihydro.dir/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/util.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/util.cpp -o CMakeFiles/mpihydro.dir/util.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/util.cpp -o CMakeFiles/mpihydro.dir/util.cpp.s
 
 src/CMakeFiles/mpihydro.dir/util.cpp.o.requires:
 
@@ -419,16 +419,16 @@ src/CMakeFiles/mpihydro.dir/util.cpp.o.provides.build: src/CMakeFiles/mpihydro.d
 
 src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o: ../src/read_in_parameters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/read_in_parameters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/read_in_parameters.cpp
 
 src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/read_in_parameters.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/read_in_parameters.cpp > CMakeFiles/mpihydro.dir/read_in_parameters.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/read_in_parameters.cpp > CMakeFiles/mpihydro.dir/read_in_parameters.cpp.i
 
 src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/read_in_parameters.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/read_in_parameters.cpp -o CMakeFiles/mpihydro.dir/read_in_parameters.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/read_in_parameters.cpp -o CMakeFiles/mpihydro.dir/read_in_parameters.cpp.s
 
 src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o.requires:
 
@@ -443,16 +443,16 @@ src/CMakeFiles/mpihydro.dir/read_in_parameters.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o: ../src/freeze_pseudo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze_pseudo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze_pseudo.cpp
 
 src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze_pseudo.cpp > CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze_pseudo.cpp > CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.i
 
 src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/freeze_pseudo.cpp -o CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/freeze_pseudo.cpp -o CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.s
 
 src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o.requires:
 
@@ -467,16 +467,16 @@ src/CMakeFiles/mpihydro.dir/freeze_pseudo.cpp.o.provides.build: src/CMakeFiles/m
 
 src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o: ../src/reso_decay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/reso_decay.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reso_decay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/reso_decay.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reso_decay.cpp
 
 src/CMakeFiles/mpihydro.dir/reso_decay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/reso_decay.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reso_decay.cpp > CMakeFiles/mpihydro.dir/reso_decay.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reso_decay.cpp > CMakeFiles/mpihydro.dir/reso_decay.cpp.i
 
 src/CMakeFiles/mpihydro.dir/reso_decay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/reso_decay.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/reso_decay.cpp -o CMakeFiles/mpihydro.dir/reso_decay.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/reso_decay.cpp -o CMakeFiles/mpihydro.dir/reso_decay.cpp.s
 
 src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o.requires:
 
@@ -491,16 +491,16 @@ src/CMakeFiles/mpihydro.dir/reso_decay.cpp.o.provides.build: src/CMakeFiles/mpih
 
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/advance.cpp.o: ../src/advance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/mpihydro.dir/advance.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/advance.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/advance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/mpihydro.dir/advance.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/advance.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/advance.cpp
 
 src/CMakeFiles/mpihydro.dir/advance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/advance.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/advance.cpp > CMakeFiles/mpihydro.dir/advance.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/advance.cpp > CMakeFiles/mpihydro.dir/advance.cpp.i
 
 src/CMakeFiles/mpihydro.dir/advance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/advance.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/advance.cpp -o CMakeFiles/mpihydro.dir/advance.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/advance.cpp -o CMakeFiles/mpihydro.dir/advance.cpp.s
 
 src/CMakeFiles/mpihydro.dir/advance.cpp.o.requires:
 
@@ -515,16 +515,16 @@ src/CMakeFiles/mpihydro.dir/advance.cpp.o.provides.build: src/CMakeFiles/mpihydr
 
 src/CMakeFiles/mpihydro.dir/eos.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/eos.cpp.o: ../src/eos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/mpihydro.dir/eos.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/eos.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/eos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/mpihydro.dir/eos.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/eos.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/eos.cpp
 
 src/CMakeFiles/mpihydro.dir/eos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/eos.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/eos.cpp > CMakeFiles/mpihydro.dir/eos.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/eos.cpp > CMakeFiles/mpihydro.dir/eos.cpp.i
 
 src/CMakeFiles/mpihydro.dir/eos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/eos.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/eos.cpp -o CMakeFiles/mpihydro.dir/eos.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/eos.cpp -o CMakeFiles/mpihydro.dir/eos.cpp.s
 
 src/CMakeFiles/mpihydro.dir/eos.cpp.o.requires:
 
@@ -539,16 +539,16 @@ src/CMakeFiles/mpihydro.dir/eos.cpp.o.provides.build: src/CMakeFiles/mpihydro.di
 
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o: ../src/evolve.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/mpihydro.dir/evolve.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/evolve.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/evolve.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/mpihydro.dir/evolve.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/evolve.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/evolve.cpp
 
 src/CMakeFiles/mpihydro.dir/evolve.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/evolve.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/evolve.cpp > CMakeFiles/mpihydro.dir/evolve.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/evolve.cpp > CMakeFiles/mpihydro.dir/evolve.cpp.i
 
 src/CMakeFiles/mpihydro.dir/evolve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/evolve.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/evolve.cpp -o CMakeFiles/mpihydro.dir/evolve.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/evolve.cpp -o CMakeFiles/mpihydro.dir/evolve.cpp.s
 
 src/CMakeFiles/mpihydro.dir/evolve.cpp.o.requires:
 
@@ -563,16 +563,16 @@ src/CMakeFiles/mpihydro.dir/evolve.cpp.o.provides.build: src/CMakeFiles/mpihydro
 
 src/CMakeFiles/mpihydro.dir/emoji.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/emoji.cpp.o: ../src/emoji.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/mpihydro.dir/emoji.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/emoji.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/emoji.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/mpihydro.dir/emoji.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/emoji.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/emoji.cpp
 
 src/CMakeFiles/mpihydro.dir/emoji.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/emoji.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/emoji.cpp > CMakeFiles/mpihydro.dir/emoji.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/emoji.cpp > CMakeFiles/mpihydro.dir/emoji.cpp.i
 
 src/CMakeFiles/mpihydro.dir/emoji.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/emoji.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/emoji.cpp -o CMakeFiles/mpihydro.dir/emoji.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/emoji.cpp -o CMakeFiles/mpihydro.dir/emoji.cpp.s
 
 src/CMakeFiles/mpihydro.dir/emoji.cpp.o.requires:
 
@@ -587,16 +587,16 @@ src/CMakeFiles/mpihydro.dir/emoji.cpp.o.provides.build: src/CMakeFiles/mpihydro.
 
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.o: ../src/music_logo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/mpihydro.dir/music_logo.cpp.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/music_logo.cpp.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music_logo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/mpihydro.dir/music_logo.cpp.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/music_logo.cpp.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music_logo.cpp
 
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/music_logo.cpp.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music_logo.cpp > CMakeFiles/mpihydro.dir/music_logo.cpp.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music_logo.cpp > CMakeFiles/mpihydro.dir/music_logo.cpp.i
 
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/music_logo.cpp.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/music_logo.cpp -o CMakeFiles/mpihydro.dir/music_logo.cpp.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/music_logo.cpp -o CMakeFiles/mpihydro.dir/music_logo.cpp.s
 
 src/CMakeFiles/mpihydro.dir/music_logo.cpp.o.requires:
 
@@ -611,16 +611,16 @@ src/CMakeFiles/mpihydro.dir/music_logo.cpp.o.provides.build: src/CMakeFiles/mpih
 
 src/CMakeFiles/mpihydro.dir/Parton.cc.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/Parton.cc.o: ../src/Parton.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/mpihydro.dir/Parton.cc.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/Parton.cc.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/Parton.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/mpihydro.dir/Parton.cc.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/Parton.cc.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/Parton.cc
 
 src/CMakeFiles/mpihydro.dir/Parton.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/Parton.cc.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/Parton.cc > CMakeFiles/mpihydro.dir/Parton.cc.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/Parton.cc > CMakeFiles/mpihydro.dir/Parton.cc.i
 
 src/CMakeFiles/mpihydro.dir/Parton.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/Parton.cc.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/Parton.cc -o CMakeFiles/mpihydro.dir/Parton.cc.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/Parton.cc -o CMakeFiles/mpihydro.dir/Parton.cc.s
 
 src/CMakeFiles/mpihydro.dir/Parton.cc.o.requires:
 
@@ -635,16 +635,16 @@ src/CMakeFiles/mpihydro.dir/Parton.cc.o.provides.build: src/CMakeFiles/mpihydro.
 
 src/CMakeFiles/mpihydro.dir/jets.cc.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/jets.cc.o: ../src/jets.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/mpihydro.dir/jets.cc.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/jets.cc.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/mpihydro.dir/jets.cc.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/jets.cc.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets.cc
 
 src/CMakeFiles/mpihydro.dir/jets.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/jets.cc.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets.cc > CMakeFiles/mpihydro.dir/jets.cc.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets.cc > CMakeFiles/mpihydro.dir/jets.cc.i
 
 src/CMakeFiles/mpihydro.dir/jets.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/jets.cc.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets.cc -o CMakeFiles/mpihydro.dir/jets.cc.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets.cc -o CMakeFiles/mpihydro.dir/jets.cc.s
 
 src/CMakeFiles/mpihydro.dir/jets.cc.o.requires:
 
@@ -659,16 +659,16 @@ src/CMakeFiles/mpihydro.dir/jets.cc.o.provides.build: src/CMakeFiles/mpihydro.di
 
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o: ../src/jets_embedding.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/jets_embedding.cc.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets_embedding.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/jets_embedding.cc.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets_embedding.cc
 
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/jets_embedding.cc.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets_embedding.cc > CMakeFiles/mpihydro.dir/jets_embedding.cc.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets_embedding.cc > CMakeFiles/mpihydro.dir/jets_embedding.cc.i
 
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/jets_embedding.cc.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/jets_embedding.cc -o CMakeFiles/mpihydro.dir/jets_embedding.cc.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/jets_embedding.cc -o CMakeFiles/mpihydro.dir/jets_embedding.cc.s
 
 src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o.requires:
 
@@ -683,16 +683,16 @@ src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o.provides.build: src/CMakeFiles/m
 
 src/CMakeFiles/mpihydro.dir/lund.cc.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/lund.cc.o: ../src/lund.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/mpihydro.dir/lund.cc.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/lund.cc.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/lund.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/mpihydro.dir/lund.cc.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/lund.cc.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/lund.cc
 
 src/CMakeFiles/mpihydro.dir/lund.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/lund.cc.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/lund.cc > CMakeFiles/mpihydro.dir/lund.cc.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/lund.cc > CMakeFiles/mpihydro.dir/lund.cc.i
 
 src/CMakeFiles/mpihydro.dir/lund.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/lund.cc.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/lund.cc -o CMakeFiles/mpihydro.dir/lund.cc.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/lund.cc -o CMakeFiles/mpihydro.dir/lund.cc.s
 
 src/CMakeFiles/mpihydro.dir/lund.cc.o.requires:
 
@@ -707,16 +707,16 @@ src/CMakeFiles/mpihydro.dir/lund.cc.o.provides.build: src/CMakeFiles/mpihydro.di
 
 src/CMakeFiles/mpihydro.dir/tree.cc.o: src/CMakeFiles/mpihydro.dir/flags.make
 src/CMakeFiles/mpihydro.dir/tree.cc.o: ../src/tree.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/mpihydro.dir/tree.cc.o"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/tree.cc.o -c /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/tree.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/mpihydro.dir/tree.cc.o"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mpihydro.dir/tree.cc.o -c /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/tree.cc
 
 src/CMakeFiles/mpihydro.dir/tree.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mpihydro.dir/tree.cc.i"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/tree.cc > CMakeFiles/mpihydro.dir/tree.cc.i
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/tree.cc > CMakeFiles/mpihydro.dir/tree.cc.i
 
 src/CMakeFiles/mpihydro.dir/tree.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mpihydro.dir/tree.cc.s"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src/tree.cc -o CMakeFiles/mpihydro.dir/tree.cc.s
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/gcc-7.3.0/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src/tree.cc -o CMakeFiles/mpihydro.dir/tree.cc.s
 
 src/CMakeFiles/mpihydro.dir/tree.cc.o.requires:
 
@@ -792,10 +792,10 @@ src/mpihydro: src/CMakeFiles/mpihydro.dir/jets_embedding.cc.o
 src/mpihydro: src/CMakeFiles/mpihydro.dir/lund.cc.o
 src/mpihydro: src/CMakeFiles/mpihydro.dir/tree.cc.o
 src/mpihydro: src/CMakeFiles/mpihydro.dir/build.make
-src/mpihydro: /home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/lib/libpythia8.a
+src/mpihydro: /home/mayanks/projects/rrg-jeon-ac/mayanks/pythia8235/lib/libpythia8.a
 src/mpihydro: src/CMakeFiles/mpihydro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable mpihydro"
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpihydro.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable mpihydro"
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpihydro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/mpihydro.dir/build: src/mpihydro
@@ -834,10 +834,10 @@ src/CMakeFiles/mpihydro.dir/requires: src/CMakeFiles/mpihydro.dir/tree.cc.o.requ
 .PHONY : src/CMakeFiles/mpihydro.dir/requires
 
 src/CMakeFiles/mpihydro.dir/clean:
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mpihydro.dir/cmake_clean.cmake
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src && $(CMAKE_COMMAND) -P CMakeFiles/mpihydro.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/mpihydro.dir/clean
 
 src/CMakeFiles/mpihydro.dir/depend:
-	cd /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peibols/projects/rrg-jeon-ac/peibols/music_testing /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/src /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/src/CMakeFiles/mpihydro.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/src /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/src/CMakeFiles/mpihydro.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/mpihydro.dir/depend
 

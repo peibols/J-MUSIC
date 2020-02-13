@@ -48,10 +48,10 @@ RM = /cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cma
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peibols/projects/rrg-jeon-ac/peibols/music_testing
+CMAKE_SOURCE_DIR = /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build
+CMAKE_BINARY_DIR = /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/local/fast: preinstall/fast
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/cvmfs/soft.computecanada.ca/nix/store/678hyhmplmrgwg96yyyxdvbpchb8maya-cmake-cursesUI-qt4UI-3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cvmfs/soft.computecanada.ca/nix/store/94gf8byylhfgcf0vg3swsjcpzivgi1dk-cmake-cursesUI-qt4UI-3.8.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,9 +126,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peibols/projects/rrg-jeon-ac/peibols/music_testing/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mayanks/projects/rrg-jeon-ac/mayanks/dani_version_music/J-MUSIC/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

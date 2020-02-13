@@ -578,10 +578,10 @@ void Cell_info::get_maximum_energy_density(SCGrid &arena) {
 void Cell_info::check_conservation_law(SCGrid &arena, SCGrid &arena_prev,
                                        double tau) {
     double N_B     = 0.0;
-    double T_tau_t = 0.0;
-    double Px	   = 0.0;
-    double Py      = 0.0;
-    double T_tau_z = 0.0;
+    double T_t_tau = 0.0;
+    double T_t_x   = 0.0;
+    double T_t_y   = 0.0;
+    double T_t_z   = 0.0;
     double deta    = DATA.delta_eta;
     double dx      = DATA.delta_x;
     double dy      = DATA.delta_y;
@@ -589,7 +589,7 @@ void Cell_info::check_conservation_law(SCGrid &arena, SCGrid &arena_prev,
     const int nx   = arena.nX();
     const int ny   = arena.nY();
 
-    #pragma omp parallel for collapse(3) reduction(+:N_B, T_tau_t, Px, Py, T_tau_z)
+    #pragma omp parallel for collapse(3) reduction(+:N_B, T_t_tau, T_t_x, T_t_y, T_t_z)
     for (int ieta = 0; ieta < neta; ieta++)     
     for (int ix = 0; ix < nx; ix++) 
     for (int iy = 0; iy < ny; iy++) {
@@ -600,43 +600,57 @@ void Cell_info::check_conservation_law(SCGrid &arena, SCGrid &arena_prev,
         const double cosh_eta = cosh(eta_s);
         const double sinh_eta = sinh(eta_s);
         N_B += (c.rhob*c.u[0] + c_prev.Wmunu[10]);
-        const double Pi00_rk_0 = (c_prev.pi_b
-                                  *(-1.0 + c_prev.u[0]*c_prev.u[0]));
-        const double e_local   = c.epsilon;
+
+	const double e_local   = c.epsilon;
         const double rhob      = c.rhob;
         const double pressure  = eos.get_pressure(e_local, rhob);
         const double u0        = c.u[0];
-        const double u3        = c.u[3];
-        const double T00_local = (e_local + pressure)*u0*u0 - pressure;
-        const double T03_local = (e_local + pressure)*u0*u3;
-        const double T_tau_tau = (T00_local + c_prev.Wmunu[0] + Pi00_rk_0);
-
-        const double Pi03_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[3];
-        const double T_tau_eta = T03_local + c_prev.Wmunu[3] + Pi03_rk_0;
-        T_tau_t += T_tau_tau*cosh_eta + T_tau_eta*sinh_eta;
-	
-	// Ideal check of Px, Py and Pz (Dani Pablos)
 	const double u1	       = c.u[1];
 	const double u2	       = c.u[2];
-	const double T_tau_x   = (e_local+pressure)*u0*u1;
-	const double T_tau_y   = (e_local+pressure)*u0*u2;
+        const double u3        = c.u[3];
+        const double T00_local = (e_local + pressure)*u0*u0 - pressure;
+        const double T01_local = (e_local + pressure)*u0*u1;
+        const double T02_local = (e_local + pressure)*u0*u2;
+        const double T03_local = (e_local + pressure)*u0*u3;
+        const double T31_local = (e_local + pressure)*u3*u1;
+        const double T32_local = (e_local + pressure)*u3*u2;
+        const double T33_local = (e_local + pressure)*u3*u3 + pressure;
 
-	Px += T_tau_x;
-	Py += T_tau_y;
-	T_tau_z += T_tau_eta*cosh_eta + T_tau_tau*sinh_eta;
+        const double Pi00_rk_0 = (c_prev.pi_b
+                                  *(-1.0 + c_prev.u[0]*c_prev.u[0]));
+        const double Pi01_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[1];
+        const double Pi02_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[2];
+        const double Pi03_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[3];
+        const double Pi31_rk_0 = c_prev.pi_b*c_prev.u[3]*c_prev.u[1];
+        const double Pi32_rk_0 = c_prev.pi_b*c_prev.u[3]*c_prev.u[2];
+        const double Pi33_rk_0 = (c_prev.pi_b
+                                   *(1.0 + c_prev.u[3]*c_prev.u[3]));
+
+        const double T_tau_tau = T00_local + c_prev.Wmunu[0] + Pi00_rk_0;
+        const double T_tau_x   = T01_local + c_prev.Wmunu[1] + Pi01_rk_0;
+        const double T_tau_y   = T02_local + c_prev.Wmunu[2] + Pi02_rk_0;
+        const double T_tau_eta = T03_local + c_prev.Wmunu[3] + Pi03_rk_0;
+        const double T_eta_x   = T31_local + c_prev.Wmunu[6] + Pi31_rk_0;
+        const double T_eta_y   = T32_local + c_prev.Wmunu[8] + Pi32_rk_0;
+        const double T_eta_eta = T33_local + c_prev.Wmunu[9] + Pi33_rk_0;
+
+        T_t_tau += T_tau_tau*cosh_eta + T_tau_eta*sinh_eta;
+	T_t_x   += T_tau_x  *cosh_eta + T_eta_x  *sinh_eta;
+	T_t_y   += T_tau_y  *cosh_eta + T_eta_y  *sinh_eta;
+	T_t_z   += T_tau_eta*cosh_eta + T_eta_eta*sinh_eta;
 
     }
     double factor = tau*dx*dy*deta;
     N_B *= factor;
-    T_tau_t *= factor*0.19733;  // GeV
-    Px *= factor*0.19733;  // GeV
-    Py *= factor*0.19733;  // GeV
-    T_tau_z *= factor*0.19733;  // GeV
+    T_t_tau *= factor*0.19733;  // GeV
+    T_t_x   *= factor*0.19733;  // GeV
+    T_t_y   *= factor*0.19733;  // GeV
+    T_t_z   *= factor*0.19733;  // GeV
     music_message << "net baryon number N_B = " << N_B;
     music_message.flush("info");
-    music_message << "total energy T^{taut} = " << T_tau_t << " GeV";
+    music_message << "total energy T^{taut} = " << T_t_tau << " GeV";
     music_message.flush("info");
-    music_message << "total Px = " << Px << " GeV, Py= " << Py << " GeV, Pz= " << T_tau_z << " GeV";
+    music_message << "total Px = " << T_t_x << " GeV, Py= " << T_t_y << " GeV, Pz= " << T_t_z << " GeV";
     music_message.flush("info");
 }
 

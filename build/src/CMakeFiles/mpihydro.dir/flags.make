@@ -6,5 +6,5 @@ CXX_FLAGS = -g -Ofast -Wall -fopenmp -std=c++11 -DDOCTEST_CONFIG_DISABLE -DNDEBU
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/peibols/projects/rrg-jeon-ac/peibols/software/pythia-install/include -I/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/include 
+CXX_INCLUDES = -I/home/mayanks/projects/rrg-jeon-ac/mayanks/pythia8235/include -I/cvmfs/soft.computecanada.ca/easybuild/software/2017/avx512/Compiler/intel2018.3/gsl/2.5/include 
 
