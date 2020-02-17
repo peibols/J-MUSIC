@@ -1,7 +1,7 @@
 echo_level  1 
 mode  2 
 eta_rhob_plateau_height  0.3 
-Initial_Binaries_input_filename  binary_collision_locations.dat 
+Initial_Binaries_input_filename  binary_collision_locations.dat ########## 
 Eta_plateau_size  10.0 
 initial_eta_rhob_profile  2 
 eta_rhob_width  1.0 
@@ -58,7 +58,7 @@ boost_invariant  0
 T_dependent_Shear_to_S_ratio  0 
 Eta_grid_size  20.0 
 Include_Rhob_Yes_1_No_0  1 
-Jets_seed  SET_SEED 
+Jets_seed  SET_SEED #####3
 output_evolution_every_N_y  2 
 output_evolution_every_N_x  2 
 Initial_time_tau_0  0.4 
@@ -66,12 +66,12 @@ output_hydro_params_header  0
 output_evolution_every_N_timesteps  10 
 Grid_size_in_y  201 
 Grid_size_in_x  201 
-output_evolution_data  1 
+output_evolution_data  1
 Include_Shear_Visc_Yes_1_No_0  1 
 eps_freeze_max  0.75 
 Do_FreezeOut_lowtemp  1 
 pseudofreeze  1 
-epsilon_freeze  0.18 
+epsilon_freeze  0.145
 N_freeze_out  14 
 use_eps_for_freeze_out  1 
 freeze_eps_flag  1 
