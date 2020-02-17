@@ -17,10 +17,10 @@ Jets::Jets(const InitData &DATA_in) : DATA(DATA_in)
   bulk_deltaf_kind = 1;
 
   // Tolerance for medium hadronization
-  x_tol = 0.1;
-  y_tol = 0.1;
-  tau_tol = 0.1;
-  eta_tol = 0.1;
+  x_tol = 2.*DATA.delta_x;
+  y_tol = 2.*DATA.delta_y;
+  tau_tol = 2.*DATA.delta_tau;
+  eta_tol = 2.*DATA.delta_eta;
 
   hadfile.open("hadrons_list.dat");
   negafile.open("sampled_partons_list.dat");
@@ -98,8 +98,7 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 	
 	    if (parton_list[iparton].GetTauForm()<0. && after_hydro_flag==1) continue;
 	    something_happens=1;
-
-		
+	
 	    //if (after_hydro==1) cout << " at tau= " << tau << " splitTime= " << parton_list[iparton].splitTime() << " tau_form= "<< parton_list[iparton].GetTauForm() << " d1= " << parton_list[iparton].GetD1() << " mom= " << parton_list[iparton].GetMom() << endl;
 
 	    //Set its splitTime if it is initial parton
@@ -183,7 +182,7 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
     } //parton list loop
               
     for (unsigned a=0; a<4; a++) {
-      cout << " Injected " << a << " = " << injected_momentum[a] << endl;
+      if (tau>=DATA.tau0) cout << " Injected " << a << " = " << injected_momentum[a] << endl;
     }
 
     return something_happens;
@@ -301,11 +300,13 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
         }
     }
 
-    //Store position of hyper-surface crossing
-    if (f_temp < Tc && parton.last_temp() >= Tc) {
-      parton.set_hyper_point( x, y, rap, tau );
+    if (tau>=DATA.tau0) {
+      //Store position of hyper-surface crossing
+      if (f_temp < Tc && parton.last_temp() >= Tc) {
+        parton.set_hyper_point( x, y, rap, tau );
+      }
+      parton.set_last_temp(f_temp);
     }
-    parton.set_last_temp(f_temp);
 
     if (tau>=DATA.tau0 && DATA.single_parton==1) {
     //if (tau>=DATA.tau0) {  
@@ -366,11 +367,18 @@ void Jets::FinalPartons() {
 		// Medium Hadronization
                 if (DATA.single_parton==0) {
 		  SampleSurface(parton);
-		  HadronizeTherm();
+		  if (fin_and_therm_parton_list.size()>0) HadronizeTherm();
 		}
 	    }
 	}
     }
+
+    // Corona hadronization
+    if (corona_parton_list.size()>0) HadronizeCorona();
+
+    hadfile.close();
+    negafile.close();
+
     //End of Parton Loop 
     cout << " Final partons list size= " << final_parton_list.size() << " and before quenching= " << initial_partons << endl;
 

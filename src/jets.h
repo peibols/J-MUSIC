@@ -48,6 +48,7 @@ class Jets {
     int bulk_deltaf_kind;
     double x_tol, y_tol, tau_tol, eta_tol;
     vector<Parton> fin_and_therm_parton_list;
+    vector<Parton> corona_parton_list;
 
     std::vector<std::shared_ptr<jet>> binary_list;
 
@@ -81,8 +82,8 @@ class Jets {
     double Rap(double eta, double pt, double m);
 
     void InitLund();
-    void HadronizeJets();
     void HadronizeTherm();
+    void HadronizeCorona();
     
     double GetFluidEnergy(double x, double y, double rap, SCGrid &arena_current);
     void GetFluidFlow(double x, double y, double rap, SCGrid &arena_current, double  *v_flow);

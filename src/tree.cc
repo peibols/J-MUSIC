@@ -37,8 +37,8 @@ bool Jets::TreeDoer(vector<double> pos_coll, double total_cross, int icoll)
 	  if (randi.flat()>cross_ratio) return 0;
 	}
 	double weight=pythia.info.weight();
-	cout << "Hard Weight = " << setprecision(6) << weight << endl;
-	cout << "Hard Cross = " << setprecision(6) << pythia.info.sigmaGen() << endl;
+	//cout << "Hard Weight = " << setprecision(6) << weight << endl;
+	//cout << "Hard Cross = " << setprecision(6) << pythia.info.sigmaGen() << endl;
 	event_weight=weight;
 	event_cross=pythia.info.sigmaGen();
 

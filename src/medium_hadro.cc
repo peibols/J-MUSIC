@@ -178,8 +178,14 @@ void Jets::SampleSurface(Parton parton)
     double x_parton = parton.hyper_point()[0];
     double y_parton = parton.hyper_point()[1];
 
+    //cout << " tau_parton= " << tau_parton << " "
+//	    << " eta_s_parton= " << eta_s_parton << " "
+//	    << " x_parton= " << x_parton << " "
+//	    << " y_parton= " << y_parton << endl;
+
     if (tau_parton == -1) {
-      cout << " Unassigned hyper-surface point! " << endl;
+      cout << " Unassigned hyper-surface point! " << " last_temp= " << parton.last_temp() << endl;
+      corona_parton_list.push_back(parton);
       return;
     }
     
@@ -252,6 +258,7 @@ void Jets::SampleSurface(Parton parton)
 
     if ( the_cell == -1000 ) {
       cout << " Could not find nearby cell! " << endl;
+      corona_parton_list.push_back(parton);
       return;
     }
 
@@ -380,24 +387,31 @@ void Jets::SampleSurface(Parton parton)
       int id;
       int t_col, t_acol;
 
-      if ( rand() > 0.5 ) id = 1;	// u quark
+      if ( (double)rand()/RAND_MAX > 0.5 ) id = 1;	// u quark
       else id = 2;			// d quark
       
       if ( icol==0 ) id *= -1, t_col = 0, t_acol = the_col;
       else t_col = the_col, t_acol = 0;
-      
+     
+      //cout << " ietaxmax= " << ietamax << endl;
+      //cout << " iptxmax= " << iptmax << endl;
+      //cout << " iphixmax= " << iphimax << endl << endl;
 
       // MonteCarlo
       double nrand = 1.;
       double dist = 0.;
       int ipt, iphi;
       do {
-        ieta = int(ietamax * rand());
-        ipt = int(iptmax * rand());
-        iphi = int(iphimax * rand());
-
+        ieta = rand() % ietamax;
+        ipt = rand() % iptmax;
+        iphi = rand() % iphimax;
+        if (ieta>=ietamax || ipt>=iptmax || iphi>=iphimax) {
+	  cout << " ieta= " << ieta << endl;
+	  cout << " ipt= " << ipt << endl;
+	  cout << " iphi= " << iphi << endl;
+	}
         dist = spectrum[ieta][ipt][iphi] / norm;
-        nrand = rand();
+        nrand = (double)rand() / RAND_MAX;
       } while ( nrand > dist );
 
       double pt = pt_array[ipt];
@@ -411,8 +425,8 @@ void Jets::SampleSurface(Parton parton)
       // Fill thermal parton
       fin_and_therm_parton_list.push_back ( Parton ( px, py, pz, en, 0., m, 0, -1, -1, id, "therm", t_col, t_acol, true ) );
 
-      negafile << px << " " << py << " " << pz << " " << en << " " << id << " "
-	       << x_cell << " " << y_cell << " " << eta_s << " " << tau << endl;  
+      negafile << px << " " << py << " " << pz << " " << en << " "
+	       << x_cell << " " << y_cell << " " << eta_s << " " << tau << " " << id << endl;  
 
     }
 

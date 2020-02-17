@@ -77,7 +77,7 @@ int Evolve::EvolveIt(SCGrid &arena_prev, SCGrid &arena_current,
    
     double last_tau=tau0; 
 
-    //itmax=0;
+    //itmax=3;
     for (int it = 0; it <= itmax; it++) {
         tau = tau0 + dt*it;
 
