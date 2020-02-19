@@ -18,15 +18,37 @@ void Jets::InitLund() {
     hpythia.readString("StringFragmentation:TraceColours = on"); 
     hpythia.readString("Fragmentation:setVertices = on");
 
-    // Don't let pi0 decay
-    //hpythia.readString("111:mayDecay = off");
-    // Don't let any hadron decay
-    hpythia.readString("HadronLevel:Decay = off");
+    // Handle hadron decays to match limited PDG list from UrQMD
+    hpythia.readString("HadronLevel:Decay = on");
+    HandleDecays();
 
     // And initialize
     hpythia.init();
 
     hadron_list.clear();
+}
+
+void Jets::HandleDecays() {
+
+    ifstream urqmd_pdg("./EOS/pdg-urqmd_v3.3+.dat");
+    if (urqmd_pdg.fail()) {
+      cout << "No PDG file for UrQMD!" << endl;
+      exit(0);
+    }
+
+    string s;
+    while (true) {
+      getline(urqmd_pdg,s);
+      if (urqmd_pdg.eof()) break;
+      istringstream iss(s);
+      int pdg_id;
+      iss >> pdg_id;
+      if (!hpythia.particleData.isParticle(pdg_id)) continue;
+      ostringstream oss;
+      oss << pdg_id << ":mayDecay = off";
+      hpythia.readString(oss.str());
+    }
+
 }
 
 void Jets::HadronizeTherm() {

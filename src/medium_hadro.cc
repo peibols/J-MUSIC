@@ -258,6 +258,11 @@ void Jets::SampleSurface(Parton parton)
 
     if ( the_cell == -1000 ) {
       cout << " Could not find nearby cell! " << endl;
+      cout << " tau_parton= " << tau_parton << " "
+	    << " eta_s_parton= " << eta_s_parton << " "
+	    << " x_parton= " << x_parton << " "
+	    << " y_parton= " << y_parton << endl;
+      cout << " last_temp= " << parton.last_temp() << endl;
       corona_parton_list.push_back(parton);
       return;
     }
