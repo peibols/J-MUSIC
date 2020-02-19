@@ -94,6 +94,13 @@ tar -zxf EOS.tar.gz
 mv results/surface_eps_0.1928.dat results/surface.dat
 ./iSS.e
 
+#Add Jet_Hadrons
+mv OSCAR.DAT OSCAR_soft.dat
+cp EOS/pdg-urqmd_v3.3+.dat .
+./append_jet_hadrons.e
+rm -fr OSCAR_soft.dat
+rm pdg-urqmd_v3.3+.dat
+
 # UrQMD
 ./osc2u.e < OSCAR.DAT
 mv fort.14 OSCAR.input

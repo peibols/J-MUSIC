@@ -1,11 +1,12 @@
 #!/bin/bash
 
 music_folder=/home/peibols/projects/rrg-jeon-ac/peibols/source/music_stuff
-init_folder=/home/peibols/projects/rrg-jeon-ac/group_writable/IP-Glasma_2.76TeV/0_5
+init_folder=/home/peibols/projects/rrg-jeon-ac/group_writable/IP-Glasma_Updated_2D_events/2.76TeV/0-5
 
 iss_folder=/home/peibols/projects/rrg-jeon-ac/peibols/iSS-master
 urqmd_folder=/home/peibols/projects/rrg-jeon-ac/peibols/urqmd
 toolkit_folder=/home/peibols/projects/rrg-jeon-ac/peibols/source/urqmd_analysis/toolkit
+append_hadron_folder=/home/mayanks/projects/rrg-jeon-ac/mayanks/add_jet_hadrons
 
 mkdir UrQMD_results
 mkdir spvn_results
@@ -30,6 +31,7 @@ for ii in {1..150}
     cp -r $iss_folder/iSS_tables job-$ii/
     cp $iss_folder/iSS_parameters.dat job-$ii/
     cp $urqmd_folder/OSCAR_header.txt job-$ii/
+    cp $append_hadron_folder/append_jet_hadrons.e job-$ii/
 
     # UrQMD
     cp $urqmd_folder/uqmd.burner job-$ii/

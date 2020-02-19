@@ -21,13 +21,15 @@ find_path(PYTHIA8_INCLUDE_DIR
           NAMES Pythia8/Pythia.h
           HINTS ${_pythia8dirs}
           PATH_SUFFIXES include include/Pythia8 include/pythia8
-          DOC "Specify the directory containing Pythia.h.")
+	  PATHS /home/mayanks/projects/rrg-jeon-ac/mayanks/pythia8235
+	  DOC "Specify the directory containing Pythia.h.")
 
 find_library(PYTHIA8_LIBRARY
-             NAMES pythia8 Pythia8
+             NAMES pythia8 Pythia8 libpythia8
              HINTS ${_pythia8dirs}
              PATH_SUFFIXES lib
-             DOC "Specify the Pythia8 library here.")
+	     PATHS /home/mayanks/projects/rrg-jeon-ac/mayanks/pythia8235
+	     DOC "Specify the Pythia8 library here.")
 
 find_library(PYTHIA8_hepmcinterface_LIBRARY
              NAMES hepmcinterface pythia8tohepmc
