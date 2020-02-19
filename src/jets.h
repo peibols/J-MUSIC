@@ -82,9 +82,10 @@ class Jets {
     double Rap(double eta, double pt, double m);
 
     void InitLund();
+    void HandleDecays();
     void HadronizeTherm();
     void HadronizeCorona();
-    
+
     double GetFluidEnergy(double x, double y, double rap, SCGrid &arena_current);
     void GetFluidFlow(double x, double y, double rap, SCGrid &arena_current, double  *v_flow);
     void GetFluidGrid(int nx, double x, int &ix, double &dx, int ny, double y, int &iy, double &dy, int neta, double rap, int &ieta, double &deta);
