@@ -579,7 +579,7 @@ void Cell_info::check_conservation_law(SCGrid &arena, SCGrid &arena_prev,
                                        double tau) {
     double N_B     = 0.0;
     double T_tau_t = 0.0;
-    double Px	   = 0.0;
+    double Px      = 0.0;
     double Py      = 0.0;
     double T_tau_z = 0.0;
     double deta    = DATA.delta_eta;
@@ -600,37 +600,41 @@ void Cell_info::check_conservation_law(SCGrid &arena, SCGrid &arena_prev,
         const double cosh_eta = cosh(eta_s);
         const double sinh_eta = sinh(eta_s);
         N_B += (c.rhob*c.u[0] + c_prev.Wmunu[10]);
-        const double Pi00_rk_0 = (c_prev.pi_b
-                                  *(-1.0 + c_prev.u[0]*c_prev.u[0]));
-        const double e_local   = c.epsilon;
+
+	const double e_local   = c.epsilon;
         const double rhob      = c.rhob;
         const double pressure  = eos.get_pressure(e_local, rhob);
         const double u0        = c.u[0];
-        const double u3        = c.u[3];
-        const double T00_local = (e_local + pressure)*u0*u0 - pressure;
-        const double T03_local = (e_local + pressure)*u0*u3;
-        const double T_tau_tau = (T00_local + c_prev.Wmunu[0] + Pi00_rk_0);
-
-        const double Pi03_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[3];
-        const double T_tau_eta = T03_local + c_prev.Wmunu[3] + Pi03_rk_0;
-        T_tau_t += T_tau_tau*cosh_eta + T_tau_eta*sinh_eta;
-	
-	// Ideal check of Px, Py and Pz (Dani Pablos)
 	const double u1	       = c.u[1];
 	const double u2	       = c.u[2];
-	const double T_tau_x   = (e_local+pressure)*u0*u1;
-	const double T_tau_y   = (e_local+pressure)*u0*u2;
+        const double u3        = c.u[3];
+        const double T00_local = (e_local + pressure)*u0*u0 - pressure;
+        const double T01_local = (e_local + pressure)*u0*u1;
+        const double T02_local = (e_local + pressure)*u0*u2;
+        const double T03_local = (e_local + pressure)*u0*u3;
 
-	Px += T_tau_x;
-	Py += T_tau_y;
+        const double Pi00_rk_0 = (c_prev.pi_b
+                                  *(-1.0 + c_prev.u[0]*c_prev.u[0]));
+        const double Pi01_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[1];
+        const double Pi02_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[2];
+        const double Pi03_rk_0 = c_prev.pi_b*c_prev.u[0]*c_prev.u[3];
+
+        const double T_tau_tau = T00_local + c_prev.Wmunu[0] + Pi00_rk_0;
+        const double T_tau_x   = T01_local + c_prev.Wmunu[1] + Pi01_rk_0;
+        const double T_tau_y   = T02_local + c_prev.Wmunu[2] + Pi02_rk_0;
+        const double T_tau_eta = T03_local + c_prev.Wmunu[3] + Pi03_rk_0;
+
+        T_tau_t += T_tau_tau*cosh_eta + T_tau_eta*sinh_eta;
+	Px      += T_tau_x                                ;
+	Py      += T_tau_y                                ;
 	T_tau_z += T_tau_eta*cosh_eta + T_tau_tau*sinh_eta;
 
     }
     double factor = tau*dx*dy*deta;
     N_B *= factor;
     T_tau_t *= factor*0.19733;  // GeV
-    Px *= factor*0.19733;  // GeV
-    Py *= factor*0.19733;  // GeV
+    Px      *= factor*0.19733;  // GeV
+    Py      *= factor*0.19733;  // GeV
     T_tau_z *= factor*0.19733;  // GeV
     music_message << "net baryon number N_B = " << N_B;
     music_message.flush("info");
