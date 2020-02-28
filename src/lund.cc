@@ -52,7 +52,10 @@ void Jets::HandleDecays() {
 }
 
 void Jets::HadronizeTherm() {
-   
+
+    int max_attempts=5;
+
+    int attempts=0;
     while (true) {	
       Event& event      = hpythia.event;
       ParticleData& pdt = hpythia.particleData;
@@ -98,7 +101,11 @@ void Jets::HadronizeTherm() {
 
       //cout << " fin_pos= " << fin_pos[0] << " " << fin_pos[1] << " " << fin_pos[2] << " " << fin_pos[3] << " " << endl;
 
-      if (!hpythia.next()) continue;
+      if (!hpythia.next()) {
+        attempts++;
+	if (attempts>=max_attempts) break;	
+	else continue;
+      }
       //hadfile <<"weight " << event_weight << " cross " << event_cross << endl;
     
       for (unsigned int ipart=0; ipart < event.size(); ++ipart)

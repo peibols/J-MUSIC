@@ -67,6 +67,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
     char line_buffer[500];
     std::string line;
     std::ifstream softhad("OSCAR_soft.dat");
+    if (softhad.fail()) { std::cout << " no SoftHad File, exiting " << std::endl; exit(1); }
     std::string OSCAR_output_filename = "OSCAR.DAT";
     std::ofstream oscar(OSCAR_output_filename.c_str());
 
@@ -122,6 +123,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
 int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<particle_info> &particle, int particle_list_size) {
     std::cout << " -- Reading in hadrons from J-MUSIC..." << std::endl;
     std::ifstream hadfile( "hadrons_list.dat");
+    if (hadfile.fail()) { std::cout << " no HadronsList File, exiting " << std::endl; exit(1); }
     double px, py, pz, energy, x, y, z, t;
     int part_id;
     double dummy = 0.;
@@ -167,6 +169,7 @@ int read_resonances_list(std::vector<particle_info> &particle) {
     double eps = 1e-15;
     std::cout << " -- Read in particle resonance decay table...";
     std::ifstream resofile("pdg-urqmd_v3.3+.dat");
+    if (resofile.fail()) { std::cout << " no Reso File, exiting " << std::endl; exit(1); }
     int local_i = 0;
     int dummy_int;
     while (!resofile.eof()) {
