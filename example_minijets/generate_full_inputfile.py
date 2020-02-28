@@ -65,7 +65,7 @@ def generate_submit_script():
     script.write(
 """#!/usr/bin/env bash
 #SBATCH --job-name=%s
-#SBATCH --array=1-150
+#SBATCH --array=1-35
 #SBATCH --time=%s
 #SBATCH --cpus-per-task=%d
 #SBATCH --mem-per-cpu=4096M
@@ -75,6 +75,8 @@ def generate_submit_script():
 
 njob=$SLURM_ARRAY_TASK_ID
 cd job-$njob
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 # MUSIC
 mv music* music_input_2
@@ -91,15 +93,18 @@ then
 
 # iSS
 tar -zxf EOS.tar.gz
+cp results/iSS_parameters.dat .
 mv results/surface_eps_0.1928.dat results/surface.dat
 ./iSS.e
 
 #Add Jet_Hadrons
 mv OSCAR.DAT OSCAR_soft.dat
-cp EOS/pdg-urqmd_v3.3+.dat .
+cp music_EOS/pdg-urqmd_v3.3+.dat .
+cp results/hadrons_list.dat .
 ./append_jet_hadrons.e
 rm -fr OSCAR_soft.dat
 rm pdg-urqmd_v3.3+.dat
+rm hadrons_list.dat
 
 # UrQMD
 ./osc2u.e < OSCAR.DAT
