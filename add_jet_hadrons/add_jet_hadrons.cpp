@@ -137,6 +137,7 @@ int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<par
         hadfile >> z;
         hadfile >> t;
         hadfile >> part_id;
+	if (hadfile.eof()) break;
 	for (int idx = 0; idx <= particle_list_size; idx++) {
 	    if (part_id == particle[idx].monval) {
 	        hadron_info hadron_i;
