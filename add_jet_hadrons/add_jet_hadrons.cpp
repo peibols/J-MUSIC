@@ -175,7 +175,6 @@ int read_resonances_list(std::vector<particle_info> &particle) {
     int local_i = 0;
     int dummy_int;
     while (!resofile.eof()) {
-	if (resofile.eof()) break;
         particle_info particle_i;
 
         resofile >> particle_i.monval;
@@ -190,6 +189,7 @@ int read_resonances_list(std::vector<particle_info> &particle) {
         resofile >> particle_i.gisospin;     //isospin degeneracy
         resofile >> particle_i.charge;
         resofile >> particle_i.decays;
+	if (resofile.eof()) break;
         for (int j = 0; j < particle_i.decays; j++) {
             decay_channel_info *temp_decay_channel = new decay_channel_info;
             resofile >> dummy_int;
