@@ -87,6 +87,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
 	std::getline(softhad, line);
 	std::istringstream iss(line);
         iss >> event_num >> num_of_particles >> dummy >> dummy;
+	if (softhad.eof()) break;
 	int total_number_of_particles = num_of_particles + num_of_jet_hadrons;
         oscar << std::setw(10) << event_num << "  "
               << std::setw(10) << total_number_of_particles << "  "
@@ -174,6 +175,7 @@ int read_resonances_list(std::vector<particle_info> &particle) {
     int local_i = 0;
     int dummy_int;
     while (!resofile.eof()) {
+	if (resofile.eof()) break;
         particle_info particle_i;
 
         resofile >> particle_i.monval;
