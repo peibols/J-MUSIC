@@ -88,6 +88,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
 	if (softhad.eof()) break;
 	std::istringstream iss(line);
         iss >> event_num >> num_of_particles >> dummy >> dummy;
+	if (softhad.eof()) break;
 	int total_number_of_particles = num_of_particles + num_of_jet_hadrons;
         oscar << std::setw(10) << event_num << "  "
               << std::setw(10) << total_number_of_particles << "  "
@@ -196,6 +197,7 @@ int read_resonances_list(std::vector<particle_info> &particle) {
         resofile >> particle_i.gisospin;     //isospin degeneracy
         resofile >> particle_i.charge;
         resofile >> particle_i.decays;
+	if (resofile.eof()) break;
         for (int j = 0; j < particle_i.decays; j++) {
             decay_channel_info *temp_decay_channel = new decay_channel_info;
             resofile >> dummy_int;
