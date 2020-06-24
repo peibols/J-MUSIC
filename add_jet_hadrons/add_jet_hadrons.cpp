@@ -85,6 +85,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
     double dummy = 0.;
     while (!softhad.eof()) {
 	std::getline(softhad, line);
+	if (softhad.eof()) break;
 	std::istringstream iss(line);
         iss >> event_num >> num_of_particles >> dummy >> dummy;
 	int total_number_of_particles = num_of_particles + num_of_jet_hadrons;
@@ -126,6 +127,7 @@ int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<par
     if (hadfile.fail()) { std::cout << " no HadronsList File, exiting " << std::endl; exit(1); }
     double px, py, pz, energy, x, y, z, t;
     int part_id;
+    std::ofstream trigfile("trigger_particle.dat");
     double dummy = 0.;
     while (!hadfile.eof()) {
         hadfile >> px;
@@ -137,6 +139,11 @@ int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<par
         hadfile >> z;
         hadfile >> t;
         hadfile >> part_id;
+	if (hadfile.eof()) break;
+	if (part_id==23) {
+	  trigfile << px << py << pz << energy << part_id << std::endl;
+	  continue;
+	}
 	for (int idx = 0; idx <= particle_list_size; idx++) {
 	    if (part_id == particle[idx].monval) {
 	        hadron_info hadron_i;
@@ -159,6 +166,7 @@ int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<par
         }
     }
     hadfile.close();
+    trigfile.close();
     std::cout << "done" << std::endl;
     return(jet_hadrons.size());
 }
@@ -173,9 +181,10 @@ int read_resonances_list(std::vector<particle_info> &particle) {
     int local_i = 0;
     int dummy_int;
     while (!resofile.eof()) {
-        particle_info particle_i;
+	particle_info particle_i;
 
         resofile >> particle_i.monval;
+    	if (resofile.eof()) break;
         resofile >> particle_i.name;
         resofile >> particle_i.mass;
         resofile >> particle_i.width;

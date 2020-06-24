@@ -203,6 +203,10 @@ typedef struct init_data {
     bool single_parton;
     bool one_hard_collision;
     bool causal_diffusion;
+    bool smooth_glauber;
+    int trigger_id;
+    double trigger_pt;
+    double trigger_eta;
 
     //Introduce Jets Flag (DOES NOTHING)
     bool introduce_jets_flag;

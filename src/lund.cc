@@ -9,9 +9,9 @@ using namespace Pythia8;
 
 void Jets::InitLund() { 
     // No event record printout.
-    hpythia.readString("Next:numberShowInfo = 0");
-    hpythia.readString("Next:numberShowProcess = 0");
-    hpythia.readString("Next:numberShowEvent = 0");
+    hpythia.readString("Next:numberShowInfo = 1");
+    hpythia.readString("Next:numberShowProcess = 1");
+    hpythia.readString("Next:numberShowEvent = 1");
     
     hpythia.readString("ProcessLevel:all = off");
    
@@ -21,6 +21,9 @@ void Jets::InitLund() {
     // Handle hadron decays to match limited PDG list from UrQMD
     hpythia.readString("HadronLevel:Decay = on");
     HandleDecays();
+
+    // Make sure Z0 does not decay
+    hpythia.readString("23:mayDecay = off");
 
     // And initialize
     hpythia.init();
@@ -72,7 +75,8 @@ void Jets::HadronizeTherm() {
           vector<double> temp_hyper_point = pIn[ipart].hyper_point();
           if (temp_hyper_point[3]!=-1.) hyper_point = temp_hyper_point;	   
 
-  	  int ide=pIn[ipart].GetId();
+	  int ide=pIn[ipart].GetId();
+	  cout << " pIn in ide= " << ide << endl;
           double px=pIn[ipart].vGetP()[0];
           double py=pIn[ipart].vGetP()[1];
           double pz=pIn[ipart].vGetP()[2];
@@ -113,18 +117,27 @@ void Jets::HadronizeTherm() {
           if (event[ipart].isFinal())
           {
               int ide=event[ipart].id();
+	      cout << " after ide= " << ide << endl;
               vector<double> p {event[ipart].px(),event[ipart].py(),event[ipart].pz(),event[ipart].e()};
               hadron_list.push_back ( Parton ( p, 0., event[ipart].m(), 0, -1, -1, ide, "hadron", 0, 0, true ) );
     
               double had_pos[4];
-	      had_pos[0] = fin_pos[0] + event[ipart].xProd()*MM2FM;	    
-	      had_pos[1] = fin_pos[1] + event[ipart].yProd()*MM2FM;	    
-	      had_pos[2] = fin_pos[2] + event[ipart].zProd()*MM2FM;	    
-	      had_pos[3] = fin_pos[3] + event[ipart].tProd()*MM2FM;
-	      //cout << " xprod= " << event[ipart].xProd()*MM2FM
-		//   << " yprod= " << event[ipart].yProd()*MM2FM
-		//   << " zprod= " << event[ipart].zProd()*MM2FM
-		//   << " tprod= " << event[ipart].tProd()*MM2FM << endl;
+	      //if (event[ipart].tProd()*MM2FM < 10000. ) {
+	        had_pos[0] = fin_pos[0] + event[ipart].xProd()*MM2FM;	    
+	        had_pos[1] = fin_pos[1] + event[ipart].yProd()*MM2FM;	    
+	        had_pos[2] = fin_pos[2] + event[ipart].zProd()*MM2FM;	    
+	        had_pos[3] = fin_pos[3] + event[ipart].tProd()*MM2FM;
+	        //cout << " THERM xprod= " << event[ipart].xProd()*MM2FM
+		  // << " yprod= " << event[ipart].yProd()*MM2FM
+		  // << " zprod= " << event[ipart].zProd()*MM2FM
+		  // << " tprod= " << event[ipart].tProd()*MM2FM << endl;
+	      //}
+	      //else {
+	        //had_pos[0] = fin_pos[0];	    
+	        //had_pos[1] = fin_pos[1];	    
+	        //had_pos[2] = fin_pos[2];	    
+	        //had_pos[3] = fin_pos[3];	    
+	      //}
 
               hadron_list[hadron_list.size()-1].SetPos(had_pos[0],had_pos[1],had_pos[2],had_pos[3]);
 
@@ -417,14 +430,22 @@ void Jets::HadronizeCorona() {
               hadron_list.push_back ( Parton ( p, 0., event[ipart].m(), 0, -1, -1, ide, "hadron", 0, 0, true ) );
     
               double had_pos[4];
-	      had_pos[0] = string_pos[0] + event[ipart].xProd()*MM2FM;	    
-	      had_pos[1] = string_pos[1] + event[ipart].yProd()*MM2FM;	    
-	      had_pos[2] = string_pos[2] + event[ipart].zProd()*MM2FM;	    
-	      had_pos[3] = string_pos[3] + event[ipart].tProd()*MM2FM;
-	      //cout << " xprod= " << event[ipart].xProd()*MM2FM
-		//   << " yprod= " << event[ipart].yProd()*MM2FM
-		//   << " zprod= " << event[ipart].zProd()*MM2FM
-		//   << " tprod= " << event[ipart].tProd()*MM2FM << endl;
+	      if (event[ipart].tProd()*MM2FM < 10000. ) {
+	        had_pos[0] = string_pos[0] + event[ipart].xProd()*MM2FM;	    
+	        had_pos[1] = string_pos[1] + event[ipart].yProd()*MM2FM;	    
+	        had_pos[2] = string_pos[2] + event[ipart].zProd()*MM2FM;	    
+	        had_pos[3] = string_pos[3] + event[ipart].tProd()*MM2FM;
+	        //cout << " CORONA xprod= " << event[ipart].xProd()*MM2FM
+		  // << " yprod= " << event[ipart].yProd()*MM2FM
+		  // << " zprod= " << event[ipart].zProd()*MM2FM
+		  // << " tprod= " << event[ipart].tProd()*MM2FM << endl;
+	      }
+	      else {
+	        had_pos[0] = string_pos[0];	    
+	        had_pos[1] = string_pos[1];	    
+	        had_pos[2] = string_pos[2];	    
+	        had_pos[3] = string_pos[3];	    
+	      }
 
               hadron_list[hadron_list.size()-1].SetPos(had_pos[0],had_pos[1],had_pos[2],had_pos[3]);
 

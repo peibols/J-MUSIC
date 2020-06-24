@@ -36,6 +36,22 @@ bool Jets::TreeDoer(vector<double> pos_coll, double total_cross, int icoll)
 	  if (cross_ratio>1.) cout << " WTF CROSS RATIO > 1 " << endl;
 	  if (randi.flat()>cross_ratio) return 0;
 	}
+
+        if (DATA.trigger_id != 0) {
+          int trig_id = DATA.trigger_id;
+	  double trig_pt = DATA.trigger_pt;
+	  double trig_eta = DATA.trigger_eta;
+	  bool we_ok=0;
+	  for (int i = 0; i < pythia.event.size(); i++) {
+	    if (!pythia.event[i].isFinal()) continue;
+	    if (pythia.event[i].id() == trig_id) {
+	      double pt = sqrt(pythia.event[i].px()*pythia.event[i].px()+pythia.event[i].py()*pythia.event[i].py());
+	      if (pt >= trig_pt && fabs(pythia.event[i].eta())<trig_eta) we_ok=1;
+	    }
+	  }
+	  if (!we_ok) return 0;
+	}
+
 	double weight=pythia.info.weight();
 	//cout << "Hard Weight = " << setprecision(6) << weight << endl;
 	//cout << "Hard Cross = " << setprecision(6) << pythia.info.sigmaGen() << endl;

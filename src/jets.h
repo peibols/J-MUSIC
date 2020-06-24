@@ -90,6 +90,8 @@ class Jets {
     void GetFluidFlow(double x, double y, double rap, SCGrid &arena_current, double  *v_flow);
     void GetFluidGrid(int nx, double x, int &ix, double &dx, int ny, double y, int &iy, double &dy, int neta, double rap, int &ieta, double &deta);
 
+    void get_smooth_xy_point(double &x, double &y);
+
 };
 
 #endif // SRC_JETS_H

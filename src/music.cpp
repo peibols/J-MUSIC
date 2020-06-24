@@ -48,7 +48,7 @@ int MUSIC::initialize_jets() {
    if (DATA.jet_medium_response_flag == 3) {
        jets = new Jets(DATA);
        if (DATA.single_parton == 0) {
-         jets->GetBinaries();
+         if (DATA.smooth_glauber==0) jets->GetBinaries();
          jets->InitJets(hydro_source_terms);
        }
        else jets->InitTestJets();

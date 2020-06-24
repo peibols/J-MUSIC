@@ -44,9 +44,22 @@ void Jets::InitJets(hydro_source &hydro_source_terms) {
     int Ncoll=binary_list.size();
    // Ncoll=100;
     if (DATA.one_hard_collision==1) {
-      int icoll = rand() % Ncoll;
-      vector<double> coll_pos {binary_list[icoll]->x_perp,binary_list[icoll]->y_perp,binary_list[icoll]->eta_source,binary_list[icoll]->tau_form}; 
-      bool put_jet=TreeDoer(coll_pos, total_cross, icoll);
+       vector<double> coll_pos;
+       int icoll;
+       if (DATA.smooth_glauber==1) {
+	icoll = 0;
+	double x_perp, y_perp;
+        get_smooth_xy_point(x_perp, y_perp); 
+	vector<double> smooth_coll_pos {x_perp, y_perp, 0., 0.};
+        coll_pos = smooth_coll_pos;
+      }
+      else {
+        icoll = rand() % Ncoll;
+        vector<double> point_coll_pos {binary_list[icoll]->x_perp,binary_list[icoll]->y_perp,binary_list[icoll]->eta_source,binary_list[icoll]->tau_form}; 
+        coll_pos = point_coll_pos;
+      }
+      bool put_jet=0;
+      while (!put_jet) put_jet=TreeDoer(coll_pos, total_cross, icoll);
       njets+=1;
     }
     else {
@@ -250,6 +263,10 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
     if (parton.GetId()==21) CF=pow(9./4.,1./3.);        //If gluon, color charge dependence is ratio of casimirs to power 1/3
     else if (fabs(parton.GetId())<=6) CF=1.;
     else CF=0.;
+
+    if (parton.GetId()==23) {
+      cout << " here it is the Z, with E= " << parton.vGetP()[3] << endl;
+    }
 
     double new_tau=tau+d_tau; 
     double new_time=new_tau*cosh(rap);

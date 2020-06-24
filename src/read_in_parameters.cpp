@@ -840,12 +840,40 @@ InitData read_in_parameters(std::string input_file) {
         istringstream(tempinput) >> temp_introduce_jets_flag;
     parameter_list.introduce_jets_flag = temp_introduce_jets_flag;
    
+    // Smooth glauber for jet embedding
+    bool temp_smooth_glauber = 0;
+    tempinput = Util::StringFind4(input_file, "smooth_glauber");
+    if (tempinput != "empty")
+        istringstream(tempinput) >> temp_smooth_glauber;
+    parameter_list.smooth_glauber = temp_smooth_glauber;
+    
     //Jets seed
     int temp_Jets_seed = 1;
     tempinput = Util::StringFind4(input_file, "Jets_seed");
     if (tempinput != "empty")
         istringstream(tempinput) >> temp_Jets_seed;
     parameter_list.Jets_seed = temp_Jets_seed;
+    
+    // Trigger id
+    int temp_trigger_id = 0;
+    tempinput = Util::StringFind4(input_file, "trigger_id");
+    if (tempinput != "empty")
+        istringstream(tempinput) >> temp_trigger_id;
+    parameter_list.trigger_id = temp_trigger_id;
+    
+    // Trigger pt
+    double temp_trigger_pt = 30.;
+    tempinput = Util::StringFind4(input_file, "trigger_pt");
+    if (tempinput != "empty")
+        istringstream(tempinput) >> temp_trigger_pt;
+    parameter_list.trigger_pt = temp_trigger_pt;
+
+    // Trigger pt
+    double temp_trigger_eta = 2.4;
+    tempinput = Util::StringFind4(input_file, "trigger_eta");
+    if (tempinput != "empty")
+        istringstream(tempinput) >> temp_trigger_eta;
+    parameter_list.trigger_eta = temp_trigger_eta;
     
     // Initial_Binaries_input_filename
     string tempbinsName = "initial/initial_bins.dat";
