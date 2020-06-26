@@ -82,9 +82,11 @@ void EOS::initialize_eos() {
             "Using lattice EOS from Huovinen/Petreczky s95p-v1.2 (for UrQMD)");
         init_eos_s95p(5);
     } else if (parameters_ptr.whichEOS == 8) {
-        music_message.info("Using lattice EOS parameterization from WB");
+//        music_message.info("Using lattice EOS parameterization from WB");
+        music_message.info("Using lattice EOS from the hot QCD collaboration for SMASH");
+	init_eos8();
     } else if (parameters_ptr.whichEOS == 9) {
-        music_message.info("Using lattice EOS from the hot QCD collaboration");
+        music_message.info("Using lattice EOS from the hot QCD collaboration for UrQMD");
         init_eos9();
     } else if (parameters_ptr.whichEOS == 10) {
         music_message.info("Using lattice EOS from A. Monnai");
@@ -101,8 +103,9 @@ void EOS::initialize_eos() {
              << "2 (s95p-v1), 3 (s95p-PCE150-v1), 4 (s95p-PCE155-v1), "
              << "5 (s95p-PCE160-v1), 6 (s95p-PCE165-v1),"
              << "7 (s95p-v1.2), "
-             << "8 (WB), "
-             << "9 (hotQCD), "
+//             << "8 (WB), "
+             << "8 (hotQCD-SMASH), "
+             << "9 (hotQCD-UrQMD), "
              << "10 (lattice EOS at finite muB), "
              << "11 (lattice EoS at finite muB from Pasi), "
              << "12 (lattice EOS at finite muB from A. Monnai up to mu_B^6)";
@@ -255,6 +258,60 @@ void EOS::init_eos_s95p(int selector) {
             eos_d >> pressure_tb[itable][i][j];
             eos_d >> d_dummy >> dummy >> dummy;;
             eos_T >> temperature_tb[itable][i][j] >> dummy >> dummy;
+        }
+    }
+    music_message.info("Done reading EOS.");
+}
+
+
+void EOS::init_eos8() {
+    // read the lattice EOS pressure, temperature, and 
+    music_message.info("reading EOS hotQCD for SMASH ...");
+    whichEOS = 8; 
+    
+    auto envPath = get_hydro_env_path();
+    stringstream slocalpath;
+    slocalpath << envPath << "/EOS/hotQCD";
+
+    string path = slocalpath.str();
+    music_message << "from path " << path;
+    music_message.flush("info");
+    
+    number_of_tables = 1;
+    resize_table_info_arrays();
+    
+    pressure_tb    = new double** [number_of_tables];
+    temperature_tb = new double** [number_of_tables];
+    for (int itable = 0; itable < number_of_tables; itable++) {
+        std::ifstream eos_file(path + "/eos_smash.bin",
+                               std::ios::binary);
+        
+        if (!eos_file) {
+            music_message.error("Can not find the EoS file.");
+            exit(1);
+        }
+
+        e_length[itable]  = 100000;
+        nb_length[itable] = 1;
+        // allocate memory for pressure arrays
+        pressure_tb[itable] = Util::mtx_malloc(nb_length[itable],
+                                               e_length[itable]);
+        temperature_tb[itable] = Util::mtx_malloc(nb_length[itable],
+                                                  e_length[itable]);
+        double temp;
+        for (int ii = 0; ii < e_length[itable]; ii++) {
+            eos_file.read((char*)&temp, sizeof(double));  // e
+            if (ii == 0) e_bounds[itable] = temp;
+            if (ii == 1) e_spacing[itable] = temp - e_bounds[itable];
+            if (ii == e_length[itable] - 1) eps_max = temp;
+
+            eos_file.read((char*)&temp, sizeof(double));  // P
+            pressure_tb[itable][0][ii] = temp;
+
+            eos_file.read((char*)&temp, sizeof(double));  // s
+
+            eos_file.read((char*)&temp, sizeof(double));  // T
+            temperature_tb[itable][0][ii] = temp;
         }
     }
     music_message.info("Done reading EOS.");
@@ -598,7 +655,8 @@ double EOS::get_pressure(double e, double rhob) const {
         int table_idx = get_table_idx(e);
         f = interpolate1D(e, table_idx, pressure_tb)/hbarc;  // 1/fm^4
     } else if (whichEOS == 8) {
-        f = get_pressure_WB(e);
+//        f = get_pressure_WB(e);
+        f = interpolate1D(e, 0, pressure_tb)/hbarc;    // 1/fm^4
     } else if (whichEOS == 9) {
         f = interpolate1D(e, 0, pressure_tb)/hbarc;    // 1/fm^4
     } else if (whichEOS >= 10) {
@@ -625,7 +683,8 @@ double EOS::p_e_func(double e, double rhob) const {
     // return dP/de
     double f;
     if (whichEOS == 8) {
-        f = get_dpOverde_WB(e);
+//        f = get_dpOverde_WB(e);
+        f = get_dpOverde3(e, rhob);
     } else {
         f = get_dpOverde3(e, rhob);
     }
@@ -860,7 +919,8 @@ double EOS::get_temperature(double eps, double rhob) const {
         int table_idx = get_table_idx(eps);
         T = interpolate1D(eps, table_idx, temperature_tb)/hbarc;  // 1/fm
     } else if (whichEOS == 8) {
-        T = get_temperature_WB(eps);
+//        T = get_temperature_WB(eps);
+        T = interpolate1D(eps, 0, temperature_tb)/hbarc;  // 1/fm
     } else if (whichEOS == 9) {
         T = interpolate1D(eps, 0, temperature_tb)/hbarc;  // 1/fm
     } else if (whichEOS >= 10) {

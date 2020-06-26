@@ -44,6 +44,7 @@ class EOS {
 
     void init_eos();     // for EOS-Q whichEOS=1
     void init_eos_s95p(int selector);  // for EOS s95p family
+    void init_eos8();    // for hotQCD EoS - SMASH
     void init_eos9();    // for hotQCD EoS
     void init_eos10();   // for EOS at finite mu_B from A. M.
     void init_eos11();   // foe EoS at finite mu_B from Pasi
