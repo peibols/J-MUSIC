@@ -124,8 +124,9 @@ void Advance::FirstRKStepT(const double tau, double x_local, double y_local,
 	}
 
 	if((DATA.jet_medium_response_flag == 2 || DATA.jet_medium_response_flag == 3) && rk_flag == 0) {
+		double loc_temp = eos.get_temperature(arena_current(ix,iy,ieta).epsilon, 0.);
 		if (DATA.causal_diffusion == 0) hydro_source_terms.get_jet_energy_source_2(
-			tau_rk, tau_next, x_local, y_local, eta_s_local, jet_mu);
+			tau_rk, tau_next, x_local, y_local, eta_s_local, jet_mu, loc_temp);
 		else hydro_source_terms.get_causal_jet_energy_source(
 			tau_rk, tau_next, x_local, y_local, eta_s_local, jet_mu);
 		for(int ii = 0; ii < 4; ii++) {

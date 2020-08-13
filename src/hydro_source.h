@@ -139,7 +139,7 @@ class hydro_source {
     void get_jet_energy_source(double time, double time_next, double x, double y, double eta_s,
                                 double *j_mu, double epsilon);
     void get_jet_energy_source_2(double time, double time_next, double x, double y, double eta_s,
-                                double *j_mu);
+                                double *j_mu, double temp);
 
     void get_causal_jet_energy_source(double time, double time_next, double x, double y, double eta_s,
 				double *j_mu);

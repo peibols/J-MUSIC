@@ -153,6 +153,8 @@ void Jets::get_smooth_xy_point(double &x, double &y) {
                 int g_maxx, int g_maxy,
                 vector<vector<double>> glaub);
 
+
+  srand(DATA.Jets_seed+2);
   while (true) {
     double rho=sqrt(150.*((double)rand()/RAND_MAX));
     double phi=2.*3.141592654*((double)rand()/RAND_MAX);

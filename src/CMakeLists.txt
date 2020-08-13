@@ -24,6 +24,7 @@ set (SOURCES
     music_logo.cpp
     Parton.cc
     jets.cc
+    eloss.cc
     jets_embedding.cc
     lund.cc
     tree.cc

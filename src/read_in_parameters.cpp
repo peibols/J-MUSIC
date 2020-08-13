@@ -840,6 +840,13 @@ InitData read_in_parameters(std::string input_file) {
         istringstream(tempinput) >> temp_introduce_jets_flag;
     parameter_list.introduce_jets_flag = temp_introduce_jets_flag;
    
+    // Pre-hydro quenching
+    bool temp_prehydro_quenching = 0;
+    tempinput = Util::StringFind4(input_file, "prehydro_quenching");
+    if (tempinput != "empty")
+        istringstream(tempinput) >> temp_prehydro_quenching;
+    parameter_list.prehydro_quenching = temp_prehydro_quenching;
+    
     // Smooth glauber for jet embedding
     bool temp_smooth_glauber = 0;
     tempinput = Util::StringFind4(input_file, "smooth_glauber");

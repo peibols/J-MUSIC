@@ -998,12 +998,18 @@ double hydro_source::causal_diffusion_delta(double t, double r) const {
 
 // jet response read for Dani's Source terms
 void hydro_source::get_jet_energy_source_2(
-    double time, double time_next, double x, double y, double eta_s, double *j_mu) {
+    double time, double time_next, double x, double y, double eta_s, double *j_mu, double temp) {
     // clean up j_mu
     for (int i = 0; i < 4; i++) {
         j_mu[i] = 0.0;
     }
-            
+
+            // T dependent sigma
+	    double x_jet_sigma_x=sqrt(2.)/(M_PI*std::max(temp,0.1));
+	    double x_jet_sigma_eta=sqrt(2.)/(M_PI*std::max(temp,0.1));
+            //jet_sigma_x = x_jet_sigma_x;
+	    //jet_sigma_eta = x_jet_sigma_eta;
+
             double n_sigma_skip = 5.;
             double prefactor_prep = 1./(M_PI*jet_sigma_x*jet_sigma_x);
             double prefactor_tau = 1./(DATA.delta_tau);
@@ -1012,30 +1018,31 @@ void hydro_source::get_jet_energy_source_2(
 	    //if (jet_energy_list.size()==0 && time > DATA.tau0) cout << " Jet Energy List size= " << jet_energy_list.size() << endl;
 	    
 	    for (auto &it: jet_energy_list) {
-		if((*it).tau_form < time-0.00001 && fabs(eta_s) < 0.01) {
+		if((*it).tau_form < time-0.00001 && fabs(eta_s) < 0.01 && DATA.prehydro_quenching==0) {
 			cout << std::scientific << time << "  " << (*it).tau_form;
-			//music_message.flush("error");
+			music_message.flush("error");
 		}
-		else {
+		else 
+		{
               	    //cout << " a source " << endl; 
 		    if (fabs((*it).tau_form-time)>1.e-5) {
-		        cout << " dif in time= " << (*it).tau_form-time << "\n \n";   	
-		        exit(0);
+		        //cout << " dif in time= " << (*it).tau_form-time << "\n \n";   	
+		        //exit(0);
 		    }                    
 		    if ((*it).tau_form > time_next) {
 		      cout << " WTFFF = " << (*it).tau_form << " vs time_next " << time_next << endl;  
 		      break;
                     }
                     double x_dis = x - (*it).x_perp;
-                    if (fabs(x_dis) > n_sigma_skip*jet_sigma_x) {
+                    if (fabs(x_dis) > n_sigma_skip*x_jet_sigma_x) {
                         continue;
                     }
                     double y_dis = y - (*it).y_perp;
-                    if (fabs(y_dis) > n_sigma_skip*jet_sigma_x) {
+                    if (fabs(y_dis) > n_sigma_skip*x_jet_sigma_x) {
                         continue;
                     }
                     double eta_dis = eta_s - (*it).eta_source;
-                    if (fabs(eta_dis) > n_sigma_skip*jet_sigma_eta) {
+                    if (fabs(eta_dis) > n_sigma_skip*x_jet_sigma_eta) {
                         continue;
                     }
 		    //cout << " WE GOT SOMETHING !!! " << (*it).dEdtau << "\n \n";

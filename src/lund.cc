@@ -33,7 +33,7 @@ void Jets::InitLund() {
 
 void Jets::HandleDecays() {
 
-    ifstream urqmd_pdg("./EOS/pdg-urqmd_v3.3+.dat");
+    ifstream urqmd_pdg("./EOS/pdg-urqmd_v3.3+.dat"); // FIX ME: need to update for SMASH
     if (urqmd_pdg.fail()) {
       cout << "No PDG file for UrQMD!" << endl;
       exit(0);

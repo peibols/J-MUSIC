@@ -207,6 +207,7 @@ typedef struct init_data {
     int trigger_id;
     double trigger_pt;
     double trigger_eta;
+    bool prehydro_quenching;
 
     //Introduce Jets Flag (DOES NOTHING)
     bool introduce_jets_flag;
