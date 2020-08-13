@@ -1034,15 +1034,15 @@ void hydro_source::get_jet_energy_source_2(
 		      break;
                     }
                     double x_dis = x - (*it).x_perp;
-                    if (fabs(x_dis) > n_sigma_skip*x_jet_sigma_x) {
+                    if (fabs(x_dis) > n_sigma_skip*jet_sigma_x) {
                         continue;
                     }
                     double y_dis = y - (*it).y_perp;
-                    if (fabs(y_dis) > n_sigma_skip*x_jet_sigma_x) {
+                    if (fabs(y_dis) > n_sigma_skip*jet_sigma_x) {
                         continue;
                     }
                     double eta_dis = eta_s - (*it).eta_source;
-                    if (fabs(eta_dis) > n_sigma_skip*x_jet_sigma_eta) {
+                    if (fabs(eta_dis) > n_sigma_skip*jet_sigma_eta) {
                         continue;
                     }
 		    //cout << " WE GOT SOMETHING !!! " << (*it).dEdtau << "\n \n";
