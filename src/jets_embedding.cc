@@ -8,6 +8,8 @@ void Jets::GetFluidGrid(int nx, double x, int &ix, double &dx, int ny, double y,
     double delta_y=DATA.delta_y;
     double delta_rap=DATA.delta_eta;
     
+    std::cout << " JET delta_x = " << delta_x << " nx=  " << nx << std::endl;
+
     ix=int(x/delta_x)+nx/2;
     dx=(x-double(ix-nx/2)*delta_x)/delta_x;
 
@@ -32,7 +34,9 @@ double Jets::GetFluidEnergy(double x, double y, double rap, SCGrid &arena_curren
     double energy=0.;
 
     if (ix < 0 || ix >= nx-1 || iy < 0 || iy >= ny-1 || ieta < 0 || ieta >= neta-1) return energy;
-    
+   
+    //cout << " energy sin mas= " << arena_current  (ix      , iy      , ieta      ).epsilon << endl;
+
     energy += arena_current  (ix      , iy      , ieta      ).epsilon * (1.-dx) * (1.-dy) * (1.-deta);
     energy += arena_current  (ix      , iy + 1  , ieta      ).epsilon * (1.-dx) * dy      * (1.-deta);
     energy += arena_current  (ix + 1  , iy      , ieta      ).epsilon * dx      * (1.-dy) * (1.-deta);
@@ -163,6 +167,10 @@ void Jets::get_smooth_xy_point(double &x, double &y) {
     double P = (double)rand()/RAND_MAX;
     if (gGlaub(x,y,g_deltax,g_deltay,g_maxx,g_maxy,glaub)>P) break;
   }
+
+  // DEBUG
+  //x=0.148;
+  //y=-1.027;
 
   cout << "X= " << x << " Y= " << y << endl;
   return;

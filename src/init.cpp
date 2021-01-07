@@ -443,11 +443,18 @@ void Init::initial_Scott_IPGlasma_XY(int ieta, SCGrid &arena_prev,
     double ux, uy, utau;
     for (int ix = 0; ix < (nx-100); ix++) {
         for (int iy = 0; iy < (ny-100); iy++) {
-            profile >> dummy1 >> dummy2 >> dummy3
-                    >> density >> utau >> ux >> uy
-                    >> dummy  >> dummy  >> dummy  >> dummy
-                    >> dummy  >> dummy  >> dummy  >> dummy
-                    >> dummy  >> dummy  >> dummy;
+	    std::string iniput;	
+	    std::getline(profile, iniput);
+	    if (iniput.empty()) {
+              //std::cout << " empty line, rereading " << std::endl;
+	      std::getline(profile, iniput);
+	    }
+	    std::stringstream ss(iniput);
+            ss >> dummy1 >> dummy2 >> dummy3
+                    >> density >> utau >> ux >> uy;
+                    //>> dummy  >> dummy  >> dummy  >> dummy
+                    //>> dummy  >> dummy  >> dummy  >> dummy
+                    //>> dummy  >> dummy  >> dummy;
             temp_profile_ed[ix+50][iy+50] = density;
             temp_profile_ux[ix+50][iy+50] = ux;
             temp_profile_uy[ix+50][iy+50] = uy;

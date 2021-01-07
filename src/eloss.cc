@@ -141,8 +141,26 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
         double f_energy=GetFluidEnergy(x, y, rap, arena_current);
         const double rhob_center = 0.;
         f_temp=eos.get_temperature(f_energy, rhob_center)*hbarc;
-        if (DATA.single_parton) cout << setprecision(6) << " local f_energy= " << f_energy << " f_temp= " << f_temp << endl; 
-   
+        if (DATA.single_parton) {
+	  cout << setprecision(6) << " local f_energy= " << f_energy << " f_temp= " << f_temp << endl; 
+          cout << " x now= " << x << " y now= " << y << " eta now= " << rap << endl;
+	}
+
+	/*
+	// CHECK
+	for (int ix=-5; ix<=5; ix++) {
+          for (int iy=-5; iy<=5; iy++) {
+            cout << "MY INTERP= " << ix << " " << iy << " " << GetFluidEnergy(ix, iy, rap, arena_current) << endl;
+	  }
+        }
+	int neta=arena_current.nEta();
+	for (int ix=0; ix<300; ix++) {
+          for (int iy=0; iy<300; iy++) {
+            cout << "RAW= " << ix << " " << iy << " " << arena_current(ix,iy,neta/2).epsilon << endl;
+	  }
+        }
+	*/
+
         double *v_flow = new double [4];
         GetFluidFlow(x, y, rap, arena_current, v_flow);
     

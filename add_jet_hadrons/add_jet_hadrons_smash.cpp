@@ -130,7 +130,7 @@ void append_jet_hadrons_to_OSCAR(std::vector<hadron_info> &jet_hadrons, int num_
 int read_jet_hadrons_list(std::vector<hadron_info> &jet_hadrons, std::vector<particle_info> &particle, int particle_list_size) {
     std::cout << " -- Reading in hadrons from J-MUSIC..." << std::endl;
     std::ifstream hadfile( "hadrons_list.dat");
-    if (hadfile.fail()) { std::cout << " no HadronsList File, exiting " << std::endl; exit(1); }
+    if (hadfile.fail()) { std::cout << " no HadronsList File, continuing " << std::endl; return 0; }
     double px, py, pz, energy, x, y, z, t;
     int part_id;
     std::ofstream trigfile("trigger_particle.dat");

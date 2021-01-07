@@ -1005,8 +1005,8 @@ void hydro_source::get_jet_energy_source_2(
     }
 
             // T dependent sigma
-	    double x_jet_sigma_x=sqrt(2.)/(M_PI*std::max(temp,0.1));
-	    double x_jet_sigma_eta=sqrt(2.)/(M_PI*std::max(temp,0.1));
+	    //double x_jet_sigma_x=sqrt(2.)/(M_PI*std::max(temp,0.1));
+	    //double x_jet_sigma_eta=sqrt(2.)/(M_PI*std::max(temp,0.1));
             //jet_sigma_x = x_jet_sigma_x;
 	    //jet_sigma_eta = x_jet_sigma_eta;
 

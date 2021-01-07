@@ -94,8 +94,10 @@ void Jets::InitTestJets() {
       parton_list[parton_list.size()-1].vSetPosIn(test_pos);
     }
     else {
-      double en=10.;
+      double en=100.;
       double phi=(double)rand() / RAND_MAX * 2. * M_PI;
+      //DEBUG
+      //phi=3.29547;
       ofstream jetphi("jetphi.dat");
       jetphi << phi << endl;
       jetphi.close();
