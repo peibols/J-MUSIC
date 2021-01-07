@@ -8,7 +8,7 @@ void Jets::GetFluidGrid(int nx, double x, int &ix, double &dx, int ny, double y,
     double delta_y=DATA.delta_y;
     double delta_rap=DATA.delta_eta;
     
-    std::cout << " JET delta_x = " << delta_x << " nx=  " << nx << std::endl;
+    //std::cout << " JET delta_x = " << delta_x << " nx=  " << nx << std::endl;
 
     ix=int(x/delta_x)+nx/2;
     dx=(x-double(ix-nx/2)*delta_x)/delta_x;
