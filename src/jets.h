@@ -40,6 +40,12 @@ class Jets {
     ofstream hadfile;
     ofstream negafile;
 
+    ofstream sourcefile;
+
+    // Eloss model
+    int eloss_model;
+    double kappa;
+
     // For medium hadronization 
     bool surface_in_binary;
     bool boost_invariant;

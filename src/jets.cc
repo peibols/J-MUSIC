@@ -22,8 +22,14 @@ Jets::Jets(const InitData &DATA_in) : DATA(DATA_in)
   tau_tol = 2.*DATA.delta_tau;
   eta_tol = 2.*DATA.delta_eta;
 
+  // Eloss model
+  eloss_model = DATA.eloss_model;
+  kappa = DATA.kappa;
+
   hadfile.open("hadrons_list.dat");
   negafile.open("sampled_partons_list.dat");
+  
+  sourcefile.open("sources_list.dat");
 }
 
 void Jets::InitJets(hydro_source &hydro_source_terms) {
@@ -94,7 +100,7 @@ void Jets::InitTestJets() {
       parton_list[parton_list.size()-1].vSetPosIn(test_pos);
     }
     else {
-      double en=100.;
+      double en=50.;
       double phi=(double)rand() / RAND_MAX * 2. * M_PI;
       //DEBUG
       //phi=3.29547;

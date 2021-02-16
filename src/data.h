@@ -209,6 +209,10 @@ typedef struct init_data {
     double trigger_eta;
     bool prehydro_quenching;
 
+    //Eloss model
+    int eloss_model;
+    double kappa;
+
     //Introduce Jets Flag (DOES NOTHING)
     bool introduce_jets_flag;
 

@@ -90,6 +90,20 @@ InitData read_in_parameters(std::string input_file) {
         istringstream(tempinput) >> temp_causal_diffusion;
     parameter_list.causal_diffusion = temp_causal_diffusion;
     
+    //eloss model
+    int temp_eloss_model = 0;
+    tempinput = Util::StringFind4(input_file, "eloss_model");
+    if (tempinput != "empty")
+	istringstream(tempinput) >> temp_eloss_model;
+    parameter_list.eloss_model = temp_eloss_model;
+
+    //jet-medium coupling
+    double temp_kappa = 0.41;
+    tempinput = Util::StringFind4(input_file, "kappa");
+    if (tempinput != "empty")
+	istringstream(tempinput) >> temp_kappa;
+    parameter_list.kappa = temp_kappa;
+    
     //gaussian of the jet source
     double temp_jet_sigma_x = 0.5;
     tempinput = Util::StringFind4(input_file, "jet_sigma_x");

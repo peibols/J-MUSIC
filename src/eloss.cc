@@ -58,6 +58,17 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 	    sourceterm->dpzdtau=p_bef[2]-p_aft[2];
 	    sourceterm->dEdtau=p_bef[3]-p_aft[3];
 
+            if (p_bef[3]-p_aft[3]!=0. && DATA.single_parton==1) {
+              sourcefile << (*(sourceterm)).tau_form << " "
+		      	 << (*(sourceterm)).x_perp << " "
+			 << (*(sourceterm)).y_perp << " "
+			 << (*(sourceterm)).eta_source << " "
+			 << (*(sourceterm)).dpxdtau << " "
+			 << (*(sourceterm)).dpydtau << " "
+			 << (*(sourceterm)).dpzdtau << " "
+			 << (*(sourceterm)).dEdtau << endl;
+            }
+
 	    if (p_bef[3]-p_aft[3]!=0.) hydro_source_terms.update_sources(sourceterm);
 	    if (p_bef[3]-p_aft[3]!=0.) {
               for (unsigned a=0; a<4; a++) {
@@ -119,7 +130,6 @@ bool Jets::EvolveJets(double tau, SCGrid &arena_current, const EOS &eos, hydro_s
 void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS &eos, hydro_source &hydro_source_terms) {
     
     double Tc=0.145;
-    double kappa=0.41;
 
     double d_tau=DATA.delta_tau;
 
@@ -169,7 +179,7 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
         u2=v_flow[3]*sinh(rap)+v_flow[2]*cosh(rap);
         u3=v_flow[3]*cosh(rap)+v_flow[2]*sinh(rap);
       
-        delete v_flow;    
+        delete v_flow;
     }
     else {
         f_temp=0.;
@@ -194,7 +204,10 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
 
     //Color Factor
     double CF;
-    if (parton.GetId()==21) CF=pow(9./4.,1./3.);        //If gluon, color charge dependence is ratio of casimirs to power 1/3
+    if (parton.GetId()==21) {
+      if (eloss_model==0) CF=pow(9./4.,1./3.);        //If gluon, color charge dependence is ratio of casimirs to power 1/3
+      else CF=9./4.;
+    }
     else if (fabs(parton.GetId())<=6) CF=1.;
     else CF=0.;
 
@@ -221,7 +234,7 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
     //Update momentum
     double quench=1.;
     if (parton.vGetP()[3]>0. && f_temp>=Tc && CF>0.) {
-        if (kappa!=0.) {
+        if (kappa!=0. && eloss_model==0) { //Strong Coupling
             double Efs=ei*lore*(1.-vscalw);
             double tstop=0.2*pow(Efs,1./3.)/(2.*pow(f_temp,4./3.)*kappa)/CF;
             double beta=tstop/f_dist;
@@ -248,7 +261,19 @@ void Jets::DoEloss(Parton &parton, double tau, SCGrid &arena_current, const EOS 
                 vector<double> pzero (4, 0.);
 	        parton.vSetP(pzero);
             }
-        }
+	}
+	if (kappa!=0. && eloss_model==1) {  //Radiative
+          double intpiece=(delta_t/0.2)*kappa*CF*f_temp*f_temp*f_temp*(f_dist/0.2);
+          quench=(p_now[3]-intpiece)/p_now[3];
+          if (quench<0.) quench=0.;
+	  parton.vSetP(parton.vGetP()*quench);
+	}
+	if (kappa!=0. && eloss_model==2) {  //Collisional
+          double intpiece=(delta_t/0.2)*kappa*CF*f_temp*f_temp;
+          quench=(p_now[3]-intpiece)/p_now[3];
+          if (quench<0.) quench=0.;
+	  parton.vSetP(parton.vGetP()*quench);
+	}
     }
 
     if (tau>=DATA.tau0) {
